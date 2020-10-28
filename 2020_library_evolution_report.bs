@@ -91,22 +91,13 @@ This report summarizes the activities of C++'s Library Evolution group from
 It is split into two sections; one focused on *execution* (process, logistics,
   and operations) and one focused on *technical* work (papers we processed, etc).
 
+Readers are encouraged to also look at:
+
+* [[P2145R1]]: Evolving C++ Remotely
+* [[P2138R3]]: Rules of Design <=> Specification Engagement
+* [[P2195R0]]: Electronic Straw Polls
+
 # Execution # {#execution}
-
-<!--
-Stats (total, per month):
-* Papers received
-* Papers processed
-  * By telecon
-  * By mailing list review
-* Papers ready for review
--->
-
-<!--
-P2195
-P2145
-P2138
--->
 
 ## Staff ## {#staff}
 
