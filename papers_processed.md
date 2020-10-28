@@ -54,5 +54,5 @@ Mailing List:
 * P2146R2: Modern std::byte stream IO for C++
 * P1924R0: Making std::stack constexpr
 * P1925R0: Making std::queue constexpr
-* P1926R0: Making std::queue constexpr
+* P1926R0: Making std::priority_queue constexpr
 
