@@ -344,4 +344,4 @@ The following papers were reviewed on the mailing list:
 * [[P1944R1]]: Add Constexpr Modifiers to Functions in `<cstring>` and `<cwchar>`
 * [[P1924R0]]: Making `std::stack` constexpr
 * [[P1925R0]]: Making `std::queue` constexpr
-* [[P1926R0]]: Making `std::queue` constexpr
+* [[P1926R0]]: Making `std::priority_queue` constexpr
