@@ -99,41 +99,11 @@ Readers are encouraged to also look at:
 
 # Execution # {#execution}
 
-## Staff ## {#staff}
-
-Library Evolution is organized by a team, not a single individual:
-
-* Bryce Adelstein Lelbach, Chair
-* Fabio Fracassi, Vice Chair
-* Ben Craig, Vice Chair
-* Billy Baker, Incubator Chair
-* Nevin Liber, Incubator Vice Chair
-* Corentin Jabot, Mailing List Review Manager
-* Inbal Levi, Mailing List Review Manager
-
-Team leadership has a number of benefits:
-
-* Increases our capacity and capabilities.
-* Reduces the burden on each leader.
-* Builds institutional knowledge and redundancy.
-
-We hold a regular staff meeting every two weeks to discuss our operations and
-  make plans for the future.
-
-Additionally, the following noble individuals take minutes for Library
-  Evolution, and deserve accolades:
-
-* Ben Craig
-* Inbal Levi
-* Mark Hoemmen
-* Guy Davidson
-
 ## Telecons ## {#telecons}
 
 Since 2020-04, Library Evolution has held a 90 minute telecon twice a week to
   review papers.
 Typically, 1 or 2 papers are reviewed at each telecon.
-We rotate who chairs each telecon.
 
 More details on how we use telecons can be found in [[P2145R1]].
 
@@ -202,6 +172,35 @@ More details on electronic polling can be found in [[P2195R0]].
 
 We have developed a Library Evolution chairing guide, which can be found on the
   <a href="https://github.com/cplusplus/LEWG/wiki">Library Evolution GitHub wiki</a>.
+
+## Staff ## {#staff}
+
+Library Evolution is organized by a team, not a single individual:
+
+* Bryce Adelstein Lelbach, Chair
+* Fabio Fracassi, Vice Chair
+* Ben Craig, Vice Chair
+* Billy Baker, Incubator Chair
+* Nevin Liber, Incubator Vice Chair
+* Corentin Jabot, Mailing List Review Manager
+* Inbal Levi, Mailing List Review Manager
+
+Team leadership has a number of benefits:
+
+* Increases our capacity and capabilities.
+* Reduces the burden on each leader.
+* Builds institutional knowledge and redundancy.
+
+We hold a regular staff meeting every two weeks to discuss our operations and
+  make plans for the future.
+
+Additionally, the following noble individuals take minutes for Library
+  Evolution, and deserve accolades:
+
+* Ben Craig
+* Inbal Levi
+* Mark Hoemmen
+* Guy Davidson
 
 # Technical # {#technical}
 
