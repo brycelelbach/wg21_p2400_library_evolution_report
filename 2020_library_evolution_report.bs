@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: 2020 Library Evolution Report
-Shortname: P2247
+Shortname: D2247
 Revision: 0
-Status: P
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -12,7 +12,7 @@ Editor: Billy Baker — Library Chair, FlightSafety, Billy.Baker@flightsafety.co
 Editor: Nevin Liber — Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
 Editor: Inbal Levi — Library Mailing List Review Manager, sinbal2l@gmail.com
 Editor: Corentin Jabot — Library Mailing List Review Manager, corentin.jabot@gmail.com
-URL: https://wg21.link/P2247R0
+URL: https://wg21.link/P2247R1
 !Source: <a href="https://github.com/brycelelbach/wg21_p2247_2020_library_evolution_report/blob/main/2020_library_evolution_report.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2247_2020_library_evolution_report/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
