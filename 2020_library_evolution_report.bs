@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: 2020 Library Evolution Report
-Shortname: P2247
-Revision: 1
-Status: P
+Shortname: D2247
+Revision: 2
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
