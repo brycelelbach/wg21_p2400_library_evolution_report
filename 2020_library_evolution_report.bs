@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: 2020 Library Evolution Report
-Shortname: D2247
-Revision: 0
-Status: D
+Shortname: P2247
+Revision: 1
+Status: P
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -15,7 +15,7 @@ Editor: Corentin Jabot — Library Mailing List Review Manager, corentin.jabot@g
 URL: https://wg21.link/P2247R1
 !Source: <a href="https://github.com/brycelelbach/wg21_p2247_2020_library_evolution_report/blob/main/2020_library_evolution_report.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2247_2020_library_evolution_report/issues
-Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
+Metadata Order: Editor, This Version, Source, Issue Tracking, Project, Audience
 Markup Shorthands: markdown yes
 Toggle Diffs: no
 No Abstract: yes
