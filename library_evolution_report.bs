@@ -137,15 +137,15 @@ More details on how we use telecons can be found in [[P2145R1]].
 <td>31.4
 <tr>
 <th>Total # of Attendees
-<td>129
-<td>153
+<td>128
+<td>152
 <tr>
 <th>Mean Telecons Per Attendee
-<td>5.3
+<td>5.4
 <td>8.8
 <tr>
 <th>Median Telecons Per Attendee
-<td>3
+<td>2.5
 <td>3
 </table>
 
