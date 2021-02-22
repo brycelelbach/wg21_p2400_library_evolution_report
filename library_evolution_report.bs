@@ -283,7 +283,8 @@ A Library Evolution review of Networking needs to begin in the first half
 A revision of [[P2168R1]]: `std::generator` was recently received and will be
   reviewed in 2021-03.
 Otherwise, no further work on the Coroutines Library Support has occurred since
-  Spring of 2020.
+  Spring of 2020 due to a lack of new papers and a lack of revisions of existing
+  papers.
 Some of the other work on Coroutines Library Support depends on Executors and
   may be blocked until progress is made.
 
@@ -298,17 +299,27 @@ This plenary-approved priority is at risk of missing C++23 unless authors
 
 ### Ranges ### {#ranges}
 
-We reviewed [[P2214R0]], A Plan for C++23 Ranges, and were generally supportive
-  of the direction proposed by the paper.
+We reviewed [[P2214R0]] (A Plan for C++23 Ranges), a joint effort from a series
+  of authors to propose a roadmap for future Ranges additions.
+Library Evolution was generally supportive of the direction proposed by the paper.
 
 We also conducted a final review of [[P2210R1]] (Superior String Splitting), and
   advanced it to electronic polling.
 It was advanced after the start of the current electronic polling period, so
   it will not be polled until the Spring of 2021.
 
-Addtionally, we reviewed the following ranges papers at telecons:
+Addtionally, we reviewed the following Ranges papers at telecons:
 * [[P1206R2]]: `ranges::to`
 * [[P2164R3]]: `views::enumerate`
+* [LWG3452](https://wg21.link/lwg3452): Are views really supposed to have strict 𝒪(1) destruction?
+
+We are making a lot of progress in this area because there are many active and
+  experienced authors collaborating on this work.
+Feedback from Library Evolution is promptly addressed and the authors are
+  regularly present at Library Evolution telecons, so review of this work
+  proceeds smoothly.
+It is likely that a good portion of this work will be able to advance to Library
+  in the first half of 2021.
 
 ### Formatting and Printing ### {#formatting-and-printing}
 
@@ -320,7 +331,7 @@ We conducted a final review of [[P2216R2]] (`std::format` improvements)
 Work progresses rapidly on [[P2093R2]] (Formatted Output), thanks to a highly
   responsive author.
 We have seen multiple revisions of this paper in the past year and it is likely
-  that it will be ready to advance soon.
+  that it will be ready to advance to Library in the first half of 2021.
 
 Additionally, a few papers proposing additions or fixes to `std::format` were
   reviewed:
@@ -367,7 +378,6 @@ The following papers were reviewed at Library Evolution telecons:
 * [[P0448R2]]: `spanstream`
 * [[P1317R0]]: Remove return type deduction in `apply`
 * [[P1425R2]]: Iterators pair constructors for `stack` and `queue`
-* [LWG3452](https://wg21.link/lwg3452): Are views really supposed to have strict 𝒪(1) destruction?
 
 The following papers were reviewed on the mailing list:
 
