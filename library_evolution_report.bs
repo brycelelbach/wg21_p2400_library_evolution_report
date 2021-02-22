@@ -8,8 +8,8 @@ Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
 Editor: Fabio Fracassi — Library Evolution Vice Chair, CODE University of Applied Sciences, f.fracassi@gmx.net
 Editor: Ben Craig — Library Evolution Vice Chair, NI, ben.craig@gmail.com
-Editor: Billy Baker — Library Chair, FlightSafety, Billy.Baker@flightsafety.com
-Editor: Nevin Liber — Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
+Editor: Billy Baker — Library Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
+Editor: Nevin Liber — Library Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
 Editor: Inbal Levi — Library Mailing List Review Manager, sinbal2l@gmail.com
 Editor: Corentin Jabot — Library Mailing List Review Manager, corentin.jabot@gmail.com
 URL: https://wg21.link/P2400
@@ -23,6 +23,9 @@ Boilerplate: style-syntax-highlighting off
 </pre>
 
 <style>
+th {
+  text-align: left;
+}
 pre {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -184,7 +187,7 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <td>4 Papers
 <tr>
 <th># of Unscheduled Mailing List Papers
-<th>15 Papers
+<td>15 Papers
 </table>
 </center>
 
@@ -257,7 +260,7 @@ In 2020-11, we concluded a series of electronic polls on Executors.
 The outcomes of those polls can be found in [[P2262R0]].
 The Executors authors are in the process of revising [[P0443R14]] according to
   the outcomes of those polls.
-We hope to resume a Library Evolution review of Executors in the first half
+We plan to resume a Library Evolution review of Executors in the first half
   of 2021.
 
 Additionally, we reviewed the following papers relating to Executors:
@@ -268,18 +271,21 @@ Additionally, we reviewed the following papers relating to Executors:
 
 Work on Networking has been proceeding in the Networking Study Group, not
   Library Evolution.
-We hope to begin a Library Evolution review of Networking in the first half
-  of 2021.
+This work depends on Executors, but large parts of it should be able to
+  proceed independent of Executors.
+
+This plenary-approved priority is at risk of missing C++23.
+A Library Evolution review of Networking needs to begin in the first half
+  of 2021 for this work to have a chance to make it into C++23.
 
 ### Coroutines Library Support ### {#coroutines-library-support}
 
 A revision of [[P2168R1]]: `std::generator` was recently received and will be
   reviewed in 2021-03.
-Otherwise, no further work on Coroutines Library Support has occurred since
-  Spring of 2020 due to a lack of new papers and a lack of revisions of existing
-  papers.
-This plenary-approved priority is at risk of missing C++23 unless authors
-  actively drive the work.
+Otherwise, no further work on the Coroutines Library Support has occurred since
+  Spring of 2020.
+Some of the other work on Coroutines Library Support depends on Executors and
+  may be blocked until progress is made.
 
 ### Standard Library Modules ### {#standard-library-modules}
 
@@ -308,6 +314,8 @@ Addtionally, we reviewed the following ranges papers at telecons:
 
 We conducted a final review of [[P2216R2]] (`std::format` improvements)
   and started electronic polling on it in 2021-01.
+[[P2216R2]] does contain breaking changes, however no current implementation
+  exists, so there is no existing usage that will actually be affected.
 
 Work progresses rapidly on [[P2093R2]] (Formatted Output), thanks to a highly
   responsive author.
