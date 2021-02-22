@@ -283,7 +283,7 @@ This plenary-approved priority is at risk of missing C++23 unless authors
 
 ### Standard Library Modules ### {#standard-library-modules}
 
-No further work on Standard Librarhy Modules occurred since the Spring of 2020
+No further work on Standard Library Modules occurred since the Spring of 2020
   due to a lack of new papers and a lack of revisions of existing papers.
 This plenary-approved priority is at risk of missing C++23 unless authors
   actively drive the work.
