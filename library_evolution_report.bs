@@ -257,8 +257,8 @@ In 2020-11, we concluded a series of electronic polls on Executors.
 The outcomes of those polls can be found in [[P2262R0]].
 The Executors authors are in the process of revising [[P0443R14]] according to
   the outcomes of those polls.
-We hope to resume a Library Evolution review of Executors in the first half of
-  2021.
+We hope to resume a Library Evolution review of Executors in the first half
+  of 2021.
 
 Additionally, we reviewed the following papers relating to Executors:
 * [[P2221R0]]: Define P0443 CPOs with `tag_invoke`
@@ -329,7 +329,7 @@ We expect to see the paper again.
 
 ### Freestanding ### {#freestanding}
 
-We conducted a final review of [[P1642R5] (Freestanding [utilities], [ranges],
+We conducted a final review of [[P1642R5]] (Freestanding [utilities], [ranges],
   and [iterators]) and started electronic polling on it in 2021-01.
 
 ## Other Work ## {#other-work}
