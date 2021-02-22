@@ -30,6 +30,10 @@ pre {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.warning {
+  color: red;
+  font-weight: bold;
+}
 .ins, ins, ins *, span.ins, span.ins * {
   background-color: rgb(200, 250, 200);
   color: rgb(0, 136, 0);
