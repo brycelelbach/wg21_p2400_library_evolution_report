@@ -99,6 +99,7 @@ Readers are encouraged to also look at:
 * [[P2145R1]]: Evolving C++ Remotely
 * [[P2138R3]]: Rules of Design <=> Specification Engagement
 * [[P2195R0]]: Electronic Straw Polls
+* [[P0592R4]]: Plan and Priorities for C++23
 * [[P2247R1]]: 2020 Library Evolution Report
 * [[P2289R0]]: 2021 Winter Library Evolution Polls
 
@@ -165,8 +166,7 @@ We conduct 2 to 3 mailing list reviews concurrently, and each review lasts for
   a few weeks.
 More details on how we use mailing lists can be found in [[P2145R1]].
 
-<center>
-<table>
+<center><table>
 <tr>
 <th>
 <th>2020-10-27 to 2021-02-16
@@ -175,21 +175,18 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <th># of Papers Reviewed On The Mailing List
 <td>9
 <td>23
-</table>
-</center>
+</table></center>
 
 ## Backlog ## {#backlog}
 
-<center>
-<table>
+<center><table>
 <tr>
 <th># of Unscheduled Telecon Papers
 <td>4 Papers
 <tr>
 <th># of Unscheduled Mailing List Papers
 <td>15 Papers
-</table>
-</center>
+</table></center>
 
 For more details on the various queues of papers being handled by Library
   Evolution, please see [the paper queries page on our wiki](https://github.com/cplusplus/LEWG/wiki/Paper-Queries).
@@ -212,7 +209,8 @@ More details on electronic polling can be found in [[P2195R0]].
 ## Prioritization ## {#prioritization}
 
 In conjunction with Library, we've prioritized all the papers that have been
-  forwarded to Library, using the priority levels identified in [[P0592R4]].
+  forwarded to Library, using the priority levels identified in [[P0592R4]]
+  (Plan and Priorities for C++23).
 See the [prioritized list of papers](https://github.com/cplusplus/LEWG/wiki/LWG-Priorities)
   for details.
 
@@ -254,6 +252,29 @@ Additionally, the following noble individuals take minutes for Library
 
 ## Plenary Approved Priorities ## {#plenary-approved-priorities}
 
+A plenary of the C++ Committee approved [[P0592R4]] (Plan and Priorities for
+  C++23).
+This section describes the status of the priority Standard Library features
+  described in that plan.
+
+<center><table>
+<tr>
+<th>Plenary Approved Priority
+<th>Status
+<tr>
+<td>Executors
+<td>Under revision. Next review expected in Spring 2021.
+<tr>
+<td>Coroutines Library Support
+<td>Parts under review. <span class="warning">Parts need authors and papers</span>.
+<tr>
+<td>Networking
+<td><span class="warning">At risk. Needs to advance to Library Evolution by Spring 2021.</span>
+<tr>
+<td>Standard Library Modules
+<td><span class="warning>At risk. Needs authors and papers.</span>
+</table></center>
+
 ### Executors ### {#executors}
 
 In 2020-11, we concluded a series of electronic polls on Executors.
@@ -261,12 +282,24 @@ The outcomes of those polls can be found in [[P2262R0]].
 
 The Executors authors are in the process of revising [[P0443R14]] according to
   the outcomes of those polls.
-We expect to resume a Library Evolution review of Executors in the first half
+We expect to resume a Library Evolution review of Executors in Sp 
   of 2021 once the revised paper is published.
 
 Additionally, we reviewed the following papers relating to Executors:
 * [[P2221R0]]: Define P0443 CPOs with `tag_invoke`
 * [[P2220R0]]: Redefine Properties in P0443
+
+### Coroutines Library Support ### {#coroutines-library-support}
+
+A revision of [[P2168R1]]: `std::generator` was recently received and will be
+  reviewed in 2021-03.
+
+Otherwise, no further work on the Coroutines Library Support has occurred since
+  Spring 2020 due to a lack of new papers and a lack of revisions of existing
+  papers.
+
+Some of the other work on Coroutines Library Support depends on Executors and
+  may be blocked for now.
 
 ### Networking ### {#networking}
 
@@ -275,25 +308,12 @@ Work on Networking has been proceeding in the Networking Study Group, not
 This work depends on Executors, but large parts of it should be able to
   proceed independent of Executors.
 
-This plenary-approved priority is at risk of missing C++23.
-A Library Evolution review of Networking needs to begin in the first half
-  of 2021 for this work to have a chance to make it into C++23.
-
-### Coroutines Library Support ### {#coroutines-library-support}
-
-A revision of [[P2168R1]]: `std::generator` was recently received and will be
-  reviewed in 2021-03.
-
-Otherwise, no further work on the Coroutines Library Support has occurred since
-  Spring of 2020 due to a lack of new papers and a lack of revisions of existing
-  papers.
-
-Some of the other work on Coroutines Library Support depends on Executors and
-  may be blocked for now.
+This plenary-approved priority is at risk of missing C++23 unless it advances
+  to Library Evolution by Spring 2021.
 
 ### Standard Library Modules ### {#standard-library-modules}
 
-No further work on Standard Library Modules occurred since the Spring of 2020
+No further work on Standard Library Modules occurred since the Spring 2020
   due to a lack of new papers and a lack of revisions of existing papers.
 
 This plenary-approved priority is at risk of missing C++23 unless authors
@@ -310,7 +330,7 @@ Library Evolution was generally supportive of the direction proposed by the pape
 We also conducted a final review of [[P2210R1]] (Superior String Splitting), and
   advanced it to electronic polling.
 It was advanced after the start of the current electronic polling period, so
-  it will not be polled until the Spring of 2021.
+  it will not be polled until Spring 2021.
 
 Addtionally, we reviewed the following Ranges papers at telecons:
 * [[P1206R2]]: `ranges::to`
@@ -323,7 +343,7 @@ Feedback from Library Evolution is promptly addressed and the authors are
   regularly present at Library Evolution telecons, so review of this work
   proceeds smoothly.
 It is likely that a good portion of this work will be able to advance to Library
-  in the first half of 2021.
+  in Spring 2021.
 
 ### Formatting and Printing ### {#formatting-and-printing}
 
@@ -335,7 +355,7 @@ We conducted a final review of [[P2216R2]] (`std::format` improvements)
 Work progresses rapidly on [[P2093R2]] (Formatted Output), thanks to a highly
   responsive author.
 We have seen multiple revisions of this paper in the past year and it is likely
-  that it will be ready to advance to Library in the first half of 2021.
+  that it will be ready to advance to Library in Spring 2021.
 
 Additionally, a few papers proposing additions or fixes to `std::format` were
   reviewed:
