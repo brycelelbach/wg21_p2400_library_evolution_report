@@ -289,7 +289,7 @@ Otherwise, no further work on the Coroutines Library Support has occurred since
   papers.
 
 Some of the other work on Coroutines Library Support depends on Executors and
-  may be blocked until progress is made.
+  may be blocked for now.
 
 ### Standard Library Modules ### {#standard-library-modules}
 
