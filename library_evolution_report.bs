@@ -268,8 +268,8 @@ Additionally, we reviewed the following papers relating to Executors:
 
 Work on Networking has been proceeding in the Networking Study Group, not
   Library Evolution.
-We hope to begin a Library Evolution review of Networking in the first half of
-  2021.
+We hope to begin a Library Evolution review of Networking in the first half
+  of 2021.
 
 ### Coroutines Library Support ### {#coroutines-library-support}
 
