@@ -290,20 +290,6 @@ This plenary-approved priority is at risk of missing C++23 unless authors
 
 ## Other Highlights ## {#other-highlights}
 
-### Formatting and Printing ### {#formatting-and-printing}
-
-We conducted a final review of [[P2216R2]] (`std::format` improvements)
-  and started electronic polling on it in 2021-01.
-
-Work progresses rapidly on [[P2093R2]] (Formatted Output), thanks to a highly
-  responsive author.
-We have seen multiple revisions of this paper in the past year and it is likely
-  that it will be ready to advance soon.
-
-Additionally, a few papers proposing additions or fixes to `std::format` were
-  reviewed:
-* [[P2197R0]]: Formatting for `std::complex`
-
 ### Ranges ### {#ranges}
 
 We reviewed [[P2214R0]], A Plan for C++23 Ranges, and were generally supportive
@@ -317,6 +303,20 @@ It was advanced after the start of the current electronic polling period, so
 Addtionally, we reviewed the following ranges papers at telecons:
 * [[P1206R2]]: `ranges::to`
 * [[P2164R3]]: `views::enumerate`
+
+### Formatting and Printing ### {#formatting-and-printing}
+
+We conducted a final review of [[P2216R2]] (`std::format` improvements)
+  and started electronic polling on it in 2021-01.
+
+Work progresses rapidly on [[P2093R2]] (Formatted Output), thanks to a highly
+  responsive author.
+We have seen multiple revisions of this paper in the past year and it is likely
+  that it will be ready to advance soon.
+
+Additionally, a few papers proposing additions or fixes to `std::format` were
+  reviewed:
+* [[P2197R0]]: Formatting for `std::complex`
 
 ### Text and Unicode ### {#text-and-unicode}
 
