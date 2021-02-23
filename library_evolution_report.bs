@@ -115,6 +115,12 @@ Since 2020-04, Library Evolution has held a 90 minute telecon twice a week to
   review papers.
 Typically, 1 or 2 papers are reviewed at each telecon.
 
+The agenda for upcoming telecon reviews can be found 
+  [here](https://github.com/cplusplus/LEWG/wiki/2021-Telecons).
+For details on how to participate in telecon reviews, please view the calendar
+  on [documents.isocpp.org](https://documents.isocpp.org) or
+  [contact Bryce Adelstein Lelbach](mailto:brycelelbach@gmail.com).
+
 More details on how we use telecons can be found in [[P2145R1]].
 
 <center>
@@ -168,6 +174,12 @@ Additionally, certain classes of papers tend to be particularly well suited for
 
 We conduct 2 to 3 mailing list reviews concurrently, and each review lasts for
   a few weeks.
+
+The agenda for upcoming mailing list reviews can be found
+  [here](https://github.com/cplusplus/LEWG/wiki/2021-Mailing-List-Reviews).
+For details on how to participate in mailing list reviews, please 
+  [contact Bryce Adelstein Lelbach](mailto:brycelelbach@gmail.com).
+
 More details on how we use mailing lists can be found in [[P2145R1]].
 
 <center><table>
@@ -181,19 +193,39 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <td>23
 </table></center>
 
-## Backlog ## {#backlog}
+## Paper Queues and Backlog ## {#paper-queues-and-backlog}
 
 <center><table>
 <tr>
-<th># of Unscheduled Telecon Papers
-<td>4 Papers
+<th>Queue
+<th># of Papers
 <tr>
-<th># of Unscheduled Mailing List Papers
-<td>15 Papers
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision">Active</a>
+<td>53
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-mailing-list-review+-label%3Ascheduled-for-library-evolution">Ready for Mailing List Review</a>
+<td>11
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-mailing-list-review+label%3Ascheduled-for-library-evolution">Scheduled for Mailing List Review</a>
+<td>11
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-meeting-review+-label%3Ascheduled-for-library-evolution">Ready for Meeting Review</a>
+<td>7
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-meeting-review+label%3Ascheduled-for-library-evolution">Scheduled for Meeting Review</a>
+<td>10
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+label%3Aready-for-library-evolution-electronic-poll">Ready for Electronic Poll</a>
+<td>1
+<tr>
+<td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+label%3Ascheduled-for-library-evolution-electronic-poll">Scheduled for Electronic Poll</a>
+<td>10
 </table></center>
 
-For more details on the various queues of papers being handled by Library
-  Evolution, please see [the paper queries page on our wiki](https://github.com/cplusplus/LEWG/wiki/Paper-Queries).
+The above information is as of the publication of this paper.
+For up to date counts and more details on the various queues of papers being
+  handled by Library Evolution, please see
+  [the paper queries page](https://github.com/cplusplus/LEWG/wiki/Paper-Queries).
 
 ## Electronic Polling ## {#electronic-polling}
 
@@ -273,10 +305,10 @@ This section describes the status of the priority Standard Library features
 <td>Parts under review. <span class="warning">Parts need authors and papers</span>.
 <tr>
 <td>Networking
-<td><span class="warning">At risk. Needs to advance to Library Evolution by Spring 2021.</span>
+<td><span class="warning">At risk for C++23. Needs to advance to Library Evolution by Spring 2021.</span>
 <tr>
 <td>Standard Library Modules
-<td><span class="warning">At risk. Needs authors and papers.</span>
+<td><span class="warning">At risk for C++23. Needs authors and papers.</span>
 </table></center>
 
 ### Executors ### {#executors}
@@ -295,7 +327,7 @@ Additionally, we reviewed the following papers relating to Executors:
 
 ### Coroutines Library Support ### {#coroutines-library-support}
 
-A revision of [[P2168R1]]: `std::generator` was recently received and will be
+A revision of [[P2168R1]] (`std::generator`) was recently received and will be
   reviewed in 2021-03.
 
 Otherwise, no further work on the Coroutines Library Support has occurred since
@@ -339,7 +371,8 @@ It was advanced after the start of the current electronic polling period, so
 Addtionally, we reviewed the following Ranges papers at telecons:
 * [[P1206R2]]: `ranges::to`
 * [[P2164R3]]: `views::enumerate`
-* [LWG3452](https://wg21.link/lwg3452): Are views really supposed to have strict 𝒪(1) destruction?
+* [LWG3452](https://wg21.link/lwg3452): Are views really supposed to have
+    strict 𝒪(1) destruction?
 
 We are making a lot of progress in this area because there are many active and
   experienced authors collaborating on this work.
