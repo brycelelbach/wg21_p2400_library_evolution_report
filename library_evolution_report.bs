@@ -201,25 +201,25 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <th># of Papers
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision">Active</a>
-<td>53
+<td>50
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-mailing-list-review+-label%3Ascheduled-for-library-evolution">Ready for Mailing List Review</a>
 <td>11
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-mailing-list-review+label%3Ascheduled-for-library-evolution">Scheduled for Mailing List Review</a>
-<td>11
+<td>10
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-meeting-review+-label%3Ascheduled-for-library-evolution">Ready for Meeting Review</a>
-<td>7
+<td>5
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+label%3Aready-for-library-evolution-meeting-review+label%3Ascheduled-for-library-evolution">Scheduled for Meeting Review</a>
-<td>10
+<td>11
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+label%3Aready-for-library-evolution-electronic-poll">Ready for Electronic Poll</a>
 <td>1
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+label%3Ascheduled-for-library-evolution-electronic-poll">Scheduled for Electronic Poll</a>
-<td>10
+<td>9
 </table></center>
 
 The above information is as of the publication of this paper.
