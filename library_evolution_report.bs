@@ -1,5 +1,6 @@
 <pre class='metadata'>
 Title: Library Evolution Report: 2020-10-27 to 2021-02-16
+H1: Library Evolution Report: <br>2020-10-27 to 2021-02-16
 Shortname: D2400
 Revision: 0
 Status: D
@@ -107,8 +108,11 @@ Readers are encouraged to also look at:
 * [[P2138R3]]: Rules of Design <=> Specification Engagement
 * [[P2195R0]]: Electronic Straw Polls
 * [[P0592R4]]: Plan and Priorities for C++23
-* [[P2247R1]]: 2020 Library Evolution Report
 * [[P2289R0]]: 2021 Winter Library Evolution Polls
+
+Prior Library Evolution reports:
+
+* <a href="https://wg21.link/P2247R1">2020-04-06 to 2020-10-22</a>
 
 # Execution # {#execution}
 
@@ -453,4 +457,6 @@ The following papers were reviewed on the mailing list:
 * [[P0849R6]]: `auto(x)`: `DECAY_COPY` in the language
 * [[P0350R4]]: Integrating SIMD with Parallel Algorithms
 * [[P0447R12]]: `std::colony`
+
+
 
