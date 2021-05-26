@@ -1,45 +1,35 @@
 Telecons:
 
-* P2214R0: A Plan for C++23 Ranges
-* P2221R0: Define P0443 CPOs with tag_invoke
-* P2220R0: Redefine Properties in P0443
-* P2216R0: std::format improvements
-* P2197R0: Formatting for std::complex
-* P2136R1: invoke<R>
-* P2077R1: Heterogeneous erasure overloads for associative containers
-* P1072R5: basic_string::resize_default_init
-* P1478R4: Byte-wise atomic memcpy
-* P0901R6: Size feedback in operator new
-* P1642R4: Freestanding Library: Easy [utilities], [ranges], and [iterators]
-* P2265R0: Renaming any_invocable
-* P2210R0: Superior String Splitting
-* P1206R2: ranges::to
-* P2186R1: Removing Garbage Collection Support
-* P2265R0: any_invocable/function_ref Naming and Headers
-* P2216R1: std::format Improvements
-* P2093R2: Formatted Output
-* P2148R0: Library Evolution Design Guidelines
-* P1478R6: Byte-wise atomic memcpy
-* P1951R0: Default Arguments for pair's Forwarding Constructor
-* P2231R0: Missing constexpr in optional and variant
-* P0849R6: auto(x): DECAY_COPY in the language
-* P2210R1: Superior String Splitting
-* P1885R4: Naming Text Encodings to Demystify Them
-* P2278R0: cbegin should always return a constant iterator
-* P2164R3: views::enumerate
-* P0448R2: spanstream
-* P1317R0: Remove return type deduction in apply
-* P1425R2: Iterators pair constructors for stack and queue
-* LWG3452: Are views really supposed to have strict 𝒪(1) destruction?
+* P0323R9: `std::expected`
+* P0533R6: `constexpr` for `<cmath>`
+* P0870R4: A proposal for a type trait to detect narrowing conversions
+* P1030R4: `std::filesystem::path_view`
+* P1072R7: `basic_string::resize_and_overwrite`
+* P2093R5: Formatted Output
+* P2123R0: Interfaces: A Facility to Manage ABI/API Evolution
+* P2168R1: `std::generator`
+* P2251R0: Require `span` & `basic_string_view` to be Trivially Copyable
+* P2276R0: Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
+* P2279R0: Language mechanism for customization points 
+* P2301R0: Add a `pmr` alias for std::stacktrace
+* P2302R0: Prefer `std::ranges::contains` over `std::basic_string_view::contains`
+* P2321R0: `views::zip`
+* P2322R2: `ranges::fold`
+* P2325R1: Views should not be required to be default constructible
+* P2328R0: `join_view` should join all views of ranges
+* P2340R0: Clarifying the status of the "C headers"
+* P2372R0: Fixing locale handling in chrono formatters
+* P1315R7: `memset_explicit`
+* P2273R0: `constexpr` `std::unique_ptr`
 
 Mailing List:
 
-* P1885R4: Naming Text Encodings to Demystify Them
-* P2218R0: More flexible optional::value_or
-* LWG2432: initializer_list assignability
-* P1950R1: An indirect value-type for C++
-* P1160R1: Add Test Polymorphic Memory Resource To The Standard Library
-* P2192R3: std::valstat - function return type
-* P0849R6: auto(x): DECAY_COPY in the language
-* P0350R4: Integrating SIMD with Parallel Algorithms
-* P0447R12: std::colony
+* P1068R5: Vector API for Random Number Generation
+* P2286R0: Formatting Ranges
+* P2273R0: `constexpr` `std::unique_ptr`
+* P2283R0: `constexpr` `<memory>` algorithms
+* P2047R0: An allocator-aware `optional` type
+* P2291R0: Add `constexpr` Modifiers to Functions `to_chars` and `from_chars` for Integral Types
+* P2248R1: Enabling list-initialization for algorithms
+* P2255R1: A type trait to detect reference binding to temporary
+
