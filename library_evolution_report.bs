@@ -30,6 +30,14 @@ svg {
 th {
   text-align: left;
 }
+table, th, tr, td {
+  border: 2px solid black !important;
+}
+@media (prefers-color-scheme: dark) {
+  table, th, tr, td {
+    border: 2px solid white !important;
+  }
+}
 .warning {
   color: red;
   font-weight: bold;
