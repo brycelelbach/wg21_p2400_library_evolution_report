@@ -405,7 +405,7 @@ No further work on Standard Library Modules occurred since the Spring 2020
 This plenary-approved priority is at risk of missing C++23 unless authors
   actively drive the work.
 
-## Stability ### {#stability}
+## Stability ## {#stability}
 
 ### Backports ### {#backports}
 
