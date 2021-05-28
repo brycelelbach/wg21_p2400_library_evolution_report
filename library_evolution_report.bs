@@ -30,70 +30,9 @@ svg {
 th {
   text-align: left;
 }
-pre {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 .warning {
   color: red;
   font-weight: bold;
-}
-.ins, ins, ins *, span.ins, span.ins * {
-  background-color: rgb(200, 250, 200);
-  color: rgb(0, 136, 0);
-  text-decoration: none;
-}
-.del, del, del *, span.del, span.del * {
-  background-color: rgb(250, 200, 200);
-  color: rgb(255, 0, 0);
-  text-decoration: line-through;
-  text-decoration-color: rgb(255, 0, 0);
-}
-math, span.math {
-  font-family: serif;
-  font-style: italic;
-}
-ul {
-  list-style-type: "— ";
-}
-blockquote {
-  counter-reset: paragraph;
-}
-div.numbered, div.newnumbered {
-  margin-left: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-div.numbered:before, div.newnumbered:before {
-  position: absolute;
-  margin-left: -2em;
-  display-style: block;
-}
-div.numbered:before {
-  content: counter(paragraph);
-  counter-increment: paragraph;
-}
-div.newnumbered:before {
-  content: "�";
-}
-div.numbered ul, div.newnumbered ul {
-  counter-reset: list_item;
-}
-div.numbered li, div.newnumbered li {
-  margin-left: 3em;
-}
-div.numbered li:before, div.newnumbered li:before {
-  position: absolute;
-  margin-left: -4.8em;
-  display-style: block;
-}
-div.numbered li:before {
-  content: "(" counter(paragraph) "." counter(list_item) ")";
-  counter-increment: list_item;
-}
-div.newnumbered li:before {
-  content: "(�." counter(list_item) ")";
-  counter-increment: list_item;
 }
 </style>
 
@@ -104,11 +43,11 @@ It is split into two sections; one focused on *execution* (process, logistics,
 
 Readers are encouraged to also look at:
 
-* [[P2145R1]]: Evolving C++ Remotely
-* [[P2138R3]]: Rules of Design <=> Specification Engagement
-* [[P2195R0]]: Electronic Straw Polls
-* [[P0592R4]]: Plan and Priorities for C++23
-* [[P2289R0]]: 2021 Winter Library Evolution Polls
+* <a href="https://wg21.link/P2145R1">P2145R1</a>: Evolving C++ Remotely
+* <a href="https://wg21.link/P2138R3">P2138R3</a>: Rules of Design <=> Specification Engagement
+* <a href="https://wg21.link/P2195R0">P2195R0</a>: Electronic Straw Polls
+* <a href="https://wg21.link/P0592R4">P0592R4</a>: Plan and Priorities for C++23
+* <a href="https://wg21.link/P2289R0">P2289R0</a>: 2021 Winter Library Evolution Polls
 
 Prior Library Evolution reports:
 
@@ -129,7 +68,8 @@ For details on how to participate in telecon reviews, please view the calendar
   on [documents.isocpp.org](https://documents.isocpp.org) or
   [contact Bryce Adelstein Lelbach](mailto:brycelelbach@gmail.com).
 
-More details on how we use telecons can be found in [[P2145R1]].
+More details on how we use telecons can be found in
+  <a href="https://wg21.link/P2145R1">P2145R1</a>.
 
 <center>
 <table>
@@ -191,7 +131,8 @@ The agenda for upcoming mailing list reviews can be found
 For details on how to participate in mailing list reviews, please
   [contact Bryce Adelstein Lelbach](mailto:brycelelbach@gmail.com).
 
-More details on how we use mailing lists can be found in [[P2145R1]].
+More details on how we use mailing lists can be found in
+  <a href="https://wg21.link/P2145R1">P2145R1</a>.
 
 <center><table>
 <tr>
@@ -212,7 +153,7 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <th># of Papers
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Alibrary-evolution-deferred">Active</a>
-<td>42
+<td>44
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Alibrary-evolution-deferred+label%3Aready-for-library-evolution-mailing-list-review+-label%3Ascheduled-for-library-evolution">Ready for Mailing List Review</a>
 <td>3
@@ -221,7 +162,7 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 <td>5
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Alibrary-evolution-deferred+label%3Aready-for-library-evolution-meeting-review+-label%3Ascheduled-for-library-evolution">Ready for Meeting Review</a>
-<td>13
+<td>14
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Alibrary-evolution-deferred+label%3Aready-for-library-evolution-meeting-review+label%3Ascheduled-for-library-evolution">Scheduled for Meeting Review</a>
 <td>12
@@ -236,7 +177,7 @@ More details on how we use mailing lists can be found in [[P2145R1]].
 The above information is as of the publication of this paper.
 For up to date counts and more details on the various queues of papers being
   handled by Library Evolution, please see
-  [the paper queries page](https://github.com/cplusplus/LEWG/wiki/Paper-Queries).
+  [the paper queries GitHub wiki page](https://github.com/cplusplus/LEWG/wiki/Paper-Queries).
 
 ## Electronic Polling ## {#electronic-polling}
 
@@ -245,16 +186,21 @@ Library Evolution conducts a quarterly series of electronic polls to affirm
 
 The following polling periods have been conducted over the past year:
 
-* 2020 Fall - completed, outcomes can be found in [[P2262R0]].
-* 2021 Winter - completed, outcomes can be found in [[P2368R0]].
-* 2021 Spring - completed, outcomes can be found in [[P2384R0]].
+* 2020 Fall - completed, outcomes can be found in
+    <a href="https://wg21.link/P2262R0">P2262R0</a>.
+* 2021 Winter - completed, outcomes can be found in
+    <a href="https://wg21.link/P2368R0">P2368R0</a>.
+* 2021 Spring - completed, outcomes can be found in
+    <a href="https://wg21.link/P2384R0">P2384R0</a>.
 
-More details on electronic polling can be found in [[P2195R0]].
+More details on electronic polling can be found in
+  <a href="https://wg21.link/P2195R0">P2195R0</a>.
 
 ## Prioritization ## {#prioritization}
 
 In conjunction with Library, we've prioritized all the papers that have been
-  forwarded to Library, using the priority levels identified in [[P0592R4]]
+  forwarded to Library, using the priority levels identified in
+  <a href="https://wg21.link/P0592R4">P0592R4</a>
   (Plan and Priorities for C++23).
 See the [prioritized list of papers](https://github.com/cplusplus/LEWG/wiki/LWG-Priorities)
   for details.
@@ -274,9 +220,9 @@ Library Evolution is organized by a team, not a single individual:
 * Billy Baker, Incubator Chair
 * Nevin Liber, Incubator Vice Chair
 * Corentin Jabot, Mailing List Review Manager
-* Inbal Levi, Mailing List Review Manager
+* Inbal Levi, Mailing List Review Manager and Algorithms Task Force Chair
 
-Team leadership has a number of benefits:
+Leadership by a group instead of a team has a number of benefits:
 
 * Increases our capacity and capabilities.
 * Reduces the burden on each leader.
@@ -295,10 +241,85 @@ Additionally, the following noble individuals take minutes for Library
 
 # Technical # {#technical}
 
+## Future of Library Technical Specifications ## {#future-of-tses}
+
+Over the last decade, we've published a number of Technical Specifications, and
+  we now have a better sense of what is involved in that process and what we get
+  out of it.
+
+There are a few key takeaways:
+
+* Shipping a feature in a Technical Specification does not use less effort than
+    shipping a feature in the International Standard.
+  Roughly the same amount of Library Evolution design effort and Library
+    specification effort is required.
+  We cannot compromise on quality.
+* Technical Specifications provide implementation experience, but they do not
+    deliver the levels of usage and deployment experience, or user feedback,
+    that we had wished for.
+
+As such, Library Evolution has become more cautious in its use of Technical
+  Specifications.
+We seem to have consensus that Technical Specifications have a cost associated
+  with them and should only be used when we have a clear set of questions that
+  we hope to answer through the TS process.
+
+There is also a feeling that Technical Specifications make it harder for us to
+  focus.
+If we're unsure about something, instead of saying "no" to it, we used to say
+  "let's put it in a TS".
+However, we now know that putting a facility into a TS uses about the same
+  resources as it would take to put it into the International Standard.
+As such, we must consider whether we want to be investing our limited time and
+  resources into things that we are not confident in.
+
+Due to the volume of work that is being done on the Standard Library in the
+  International Standard, we have had little time and effort to spare on
+  Technical Specifications in the past few years.
+Some proposals were forwarded to Technical Specifications as long ago as 2017
+  and have still not made it to publication.
+
+One of the original motivations for Technical Specifications was to allow the
+  Standard Library to ship new features faster.
+After the C++11 cycle, which took over a decade, this rationale made sense.
+However, over the last decade we have adopted a three year ship cycle for the
+  International Standard.
+Unintuitively, the International Standard is often a faster ship vehicle than
+  Technical Specifications.
+
+This has brought into question the future of general-purpose Technical
+  Specifications, like the Library Fundamentals TS, which collections of possibly
+  unrelated facilities, instead of a focused vehicle with specific goals and
+  questions to be addressed.
+Library Evolution has not forwarded anything to the Library Fundamentals TS in
+  at least a year.
+
+There are two larger features that were targeting the next revision of the
+  Library Fundamentals TS:
+  <a href="https://wg21.link/P0323R10">P0323R10</a> (`std::expected`) and
+  <a href="https://wg21.link/P0009R12">P0009R12</a> (`std::mdspan`).
+Library Evolution recently reconsidered the ship vehicle for
+  <a href="https://wg21.link/P0323R10">P0323R10</a> (`std::expected`) and
+  decided to send it to C++23 instead.
+In 2021-06, Library Evolution will reconsider the ship vehicle for
+  <a href="https://wg21.link/P0009R12">P0009R12</a> (`std::mdspan`), and it is
+  likely that we will retarget it for C++23 as well.
+This will leave the Library Fundamentals TS working draft with only a few small
+  additions.
+
+Technical Specifications are not without merit.
+But they must be focused and used sparingly.
+They are not a mechanism for us to increase the quantity of things that we ship
+  or the speed at which we ship.
+
+Over the next few months, we need to discuss and formalize how we want to use
+  Technical Specifications in the future, and decide the fate of TSes that are
+  already in the works like the next revision of the Library Fundamentals TS.
+
 ## Plenary Approved Priorities ## {#plenary-approved-priorities}
 
-A plenary of the C++ Committee approved [[P0592R4]] (Plan and Priorities for
-  C++23).
+A plenary of the C++ Committee approved
+  <a href="https://wg21.link/P0592R4">P0592R4</a> (Plan and Priorities for C++23).
 This section describes the status of the priority Standard Library features
   described in that plan.
 
@@ -323,16 +344,29 @@ This section describes the status of the priority Standard Library features
 ### Executors ### {#executors}
 
 In 2020-11, we concluded a series of electronic polls on Executors.
-The outcomes of those polls can be found in [[P2262R0]].
+The outcomes of those polls can be found in
+  <a href="https://wg21.link/P2262R0">P2262R0</a>.
 
-The Executors authors are in the process of revising [[P0443R14]] according to
+The Executors authors are in the process of revising
+  <a href="https://wg21.link/P0443R14">P0443R14</a> according to
   the outcomes of those polls, which will be published in the 2021-06 mailing.
-We expect to resume a Library Evolution review of Executors in 2021-07.
+We expect to resume a Library Evolution review of Executors in 2021-07 and to
+  continue that review until the Fall of 2021.
+At that point, we will make a decision about whether we want to advance the core
+  Executors proposal to Library for C++23.
+
+We had a joint session with Evolution recently to consider
+  <a href="https://wg21.link/P2279R0">P2279R0</a>
+  (Language mechanism for customization points), an alternative to library-based
+  customization mechanisms such as those used in Executors.
+We're interested in seeing further exploration of this, but we cannot hold up
+  Library Evolution for it in the meantime.
 
 ### Coroutines Library Support ### {#coroutines-library-support}
 
-A revision of [[P2168R1]] (`std::generator`) was recently received and reviewed
-  in 2021-02, 2021-03, and 2021-04.
+A revision of
+  <a href="https://wg21.link/P2168R1">P2168R1</a> (`std::generator`) was
+  recently received and reviewed multiple times in 2021-02, 2021-03, and 2021-04.
 The authors have been given thorough feedback and will return with a revision
   in the coming months.
 
@@ -363,39 +397,268 @@ No further work on Standard Library Modules occurred since the Spring 2020
 This plenary-approved priority is at risk of missing C++23 unless authors
   actively drive the work.
 
-## Backports ## {#backports}
+## Stability ### {#stability}
 
-TODO
+### Backports ### {#backports}
+
+Typically, it is very difficult or impossible to make breaking changes to
+  Standard C++ facilities after they have shipped in a particular C++ Standard.
+However, sometimes there is a small window of opportunity to make such changes.
+
+If no implementation has shipped a particular Standard C++ facility in production,
+  then no one is using the facility yet.
+Therefore, it is possible for the C++ committee to make what would be a
+  breaking change to said facility in the next C++ Standard without actually
+  causing any breakage.
+This is only possible if all vendors agree to accept the change and apply
+  it as a backport to their implementation of the older C++ Standard.
+
+Backporting breaking changes to Standard C++ facilities in this way is an
+  extraordinary measure and must only be done with the utmost of care.
+It should not be considered the norm and we should not assume that we will be
+  able to do it in the future.
+
+When we make these changes, we are effectively changing a C++ Standard after it
+  has shipped.
+This can cause a great deal of uncertainty in the ecosystem for both users and
+  vendors, because it makes it unclear when a C++ Standard is complete and
+  stable.
+
+Over the past few months, Library Evolution has taken advantage of this window
+  to fix a number of issues impacting ranges and text formatting in C++20:
+
+* <a href="https://wg21.link/P2372R0">P2372R0</a>:
+    Fixing locale handling in chrono formatters
+* <a href="https://wg21.link/P2216R3">P2216R3</a>:
+    `format` improvements
+* <a href="https://wg21.link/P2328R1">P2328R1</a>:
+    `join_view` should join all views of ranges
+* <a href="https://wg21.link/P2325R3">P2325R3</a>:
+    Views should not be required to be default constructible
+* <a href="https://wg21.link/P2210R2">P2210R2</a>:
+    Superior string splitting
+
+The above information is as of the publication of this paper.
+For up to date information and more details on Library backports
+  [the backports GitHub wikipage](https://github.com/cplusplus/LEWG/wiki/Backports).
+
+### Interfaces ### {#interfaces}
+
+For many years, the C++ committee has been debating how we should balance
+  stability with the need to evolve the Standard Library.
+At the 2020 Prague meeting, we discussed this in detail - see
+  <a href="https://wg21.link/P1863R1">P1863R1</a> (ABI - Now or Never) and
+  <a href="https://wg21.link/P2028R0">P2028R0</a> (What is ABI, and What Should
+  The C++ Committee Do About It?).
+
+It seems unlikely that we'll solve this problem with policy alone, so there is
+  an interest within Library Evolution for exploring technical solutions that
+  would allow us to build library facilities that will be resilient to future
+  changes.
+Library Evolution recently discussed one such proposal for a language-based
+  solution, <a href="https://wg21.link/P2123R0">P2123R0</a> (Interfaces: A
+  Facility to Manage ABI/API Evolution).
+We are interested in seeing more exploration of this space and welcome
+  papers that do additional fact finding and research into this space so that
+  we better understand our needs and how we might benefit from a technical
+  solution like <a href="https://wg21.link/P2123R0">P2123R0</a>.
 
 ## Other Highlights ## {#other-highlights}
 
 ### Ranges ### {#ranges}
 
-TODO
+We are making significant progress on the objectives laid out in
+  <a href="https://wg21.link/P2214R0">P2214R0</a> (A Plan for C++23 Ranges).
+
+Over the past few months, we have reviewed the following ranges proposals, some
+  of which make breaking changes from C++20 and are intended as backports:
+
+* <a href="https://wg21.link/P2325R1">P2325R1</a>:
+    Views should not be required to be default constructible
+      (C++20 backport)
+* <a href="https://wg21.link/P2328R0">P2328R0</a>:
+    `ranges::join_view` should join all views of ranges
+      (C++20 backport)
+* <a href="https://wg21.link/P2210R2">P2210R2</a>:
+    Superior String Splitting
+      (C++20 backport)
+* <a href="https://wg21.link/P2251R0">P2251R0</a>:
+    Require `span` & `basic_string_view` to be Trivially Copyable
+      (C++20 backport)
+* <a href="https://wg21.link/P2321R0">P2321R0</a>:
+    `views::zip`
+* <a href="https://wg21.link/P2322R2">P2322R2</a>:
+    `ranges::fold`
+* <a href="https://wg21.link/P2276R0">P2276R0</a>:
+    Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
+* <a href="https://wg21.link/P2302R0">P2302R0</a>:
+    Prefer `ranges::contains` over `basic_string_view::contains`
+* <a href="https://wg21.link/P2286R0">P2286R0</a>:
+    Formatting Ranges
+
+The following ranges proposals are scheduled for review over the next few
+  months:
+
+* <a href="https://wg21.link/P2374R0">P2374R0</a>:
+    `views::cartesian_product`
+* <a href="https://wg21.link/P2164R4">P2164R4</a>:
+    `views::enumerate`
+* <a href="https://wg21.link/P1664R3">P1664R3</a>:
+    `ranges::reconstructible_range`
+* <a href="https://wg21.link/P1206R4">P1206R4</a>:
+    `ranges::to`
+* <a href="https://wg21.link/P2232R2">P2232R2</a>:
+    `ranges::fold`
+* <a href="https://wg21.link/P2286R1">P2286R1</a>:
+    Formatting Ranges
+* <a href="https://wg21.link/LWG3534/github">LWG3534</a>:
+    `ranges::set_intersection` and `ranges::set_difference `algorithm
+      requirements are too strict
 
 ### Formatting and Printing ### {#formatting-and-printing}
 
-TODO
+We began reviewing <a href="https://wg21.link/P2372R0">P2372R0</a> (Fixing
+  locale handling in chrono formatters), a proposal which aims to make chrono
+  formatters locale-indepenent by default.
+This proposal is a change from C++20 and we aim to backport it.
+We will review the next revision in 2021-06.
+
+We've continued our work on <a href="https://wg21.link/P2093R5">P2093R5</a>
+  (Formatted Output), which is being reviewed by both Library Evolution and the
+  Text and Unicode group (SG16).
+We expect it to be sent to us again over the summer, and hopefully it will be
+  able to advance to Library for C++23 in the next few months.
+
+We've also refined <a href="https://wg21.link/P2286R1">P2286R1</a> (Formatting
+  Ranges) via mailing list to a point where it is ready for review at a Library
+  Evolution telecon, which should happen in the Summer of 2021.
 
 ### Text and Unicode ### {#text-and-unicode}
 
-TODO
+The Text and Unicode group (SG16) has forwarded us the next revision of
+  <a href="https://wg21.link/P1885R5">P1885R5</a> (Naming Text Encodings to
+  Demystify Them), which is a part of the roadmap laid our in
+  <a href="https://wg21.link/P1238R0">P1238R0</a> (Unicode Direction) and one of
+  their priorities for C++23.
+We plan to review it over the summer and hopefully advance it to Library.
 
-### Freestanding ### {#freestanding}
+### `expected` ### {#expected}
 
-We conducted a final review of [[P1642R5]] (Freestanding [utilities], [ranges],
-  and [iterators]) and started electronic polling on it in 2021-01.
+We looked at <a href="https://wg21.link/P0323R10">P0323R10</a>
+  (`std::expected`) to reconsider its ship vehicle.
+It was originally forwarded to Library in 2017 for the next revision of the
+  Library Fundamentals Technical Specification.
+We decided that we want to instead ship it in C++23, as we do not believe the
+  Technical Specification process will improve the proposal and we do not have
+  specific questions for a TS to address.
 
-## Other Work ## {#other-work}
+### `constexpr` `<cmath>` ### {#constexpr-cmath}
+
+At the 2021-02 C++ committee plenary meeting, we did not have consensus to
+  advance <a href="https://wg21.link/P0533R6">P0533R6</a> (`constexpr`
+  `<cmath>`), due to some open questions and concerns that the semantics
+  were unclear, especially regarding error cases.
+The paper returned to Library Evolution, where made some design changes that we
+  believe resolves all of the outstanding concerns.
+The paper will advance to Library pending an electronic poll in Summer 2021.
+
+In 2021-06, Library Evolution will consider the `constexpr`ification of
+  additional parts of `<cmath>`, as discussed in
+  <a href="https://wg21.link/P1383R0">P1383R0</a> and
+  <a href="https://wg21.link/P2337R0">P2337R0</a>.
+
+### Linear Algebra and `mdspan` ### {#linear-algebra-and-mdspan}
+
+We have received a new revision of
+  <a href="https://wg21.link/P1673R3">P1673R3</a> (BLAS Linear Algebra), which we
+  plan to review in 2021-06.
+We will also be looking at the latest revision of
+  <a href="https://wg21.link/P0009R11">P0009R11</a> (`mdspan`) in 2021-06.
+It was advanced to Library a few years ago, but there are some minor changes we
+  need to review, and we also want to consider retargeting it from the Library
+  Fundamentals TS version 3 to C++23.
+
+## Papers Reviewed ## {#papers-reviewed}
 
 The following papers were reviewed at Library Evolution telecons and advanced
   to Library Working Group in the 2021 Spring Library Evolution polling period
-  (see [[P2384R0]] for details):
+  (see <a href="https://wg21.link/P2384R0">P2384R0</a> for details):
+
+* <a href="https://wg21.link/P0323R10">P0323R10</a>:
+    `expected`
+* <a href="https://wg21.link/P2325R2">P2325R2</a>:
+    Views Should Not Be Required To Be Default Constructible
+      (C++20 backport)
+* <a href="https://wg21.link/P2328R0">P2328R0</a>:
+    `ranges::join_view` Should Join All Views Of Ranges
+      (C++20 backport)
+* <a href="https://wg21.link/P2210R2">P2210R2</a>:
+    Superior String Splitting
+      (C++20 backport)
+* <a href="https://wg21.link/P2251R1">P2251R1</a>:
+    Require `span` & `basic_string_view` To Be Trivially Copyable
+      (C++20 backport)
+* <a href="https://wg21.link/P2321R1">P2321R1</a>:
+    `views::zip`
+* <a href="https://wg21.link/P1072R7">P1072R7</a>:
+    `basic_string::resize_and_overwrite`
+* <a href="https://wg21.link/P2340R0">P2340R0</a>:
+    Clarifying The Status Of The "C Headers"
+* <a href="https://wg21.link/P2301R0">P2301R0</a>:
+    Add A `pmr` Alias For `stacktrace`
 
 The following papers were reviewed at Library Evolution telecons:
 
-TODO
+* <a href="https://wg21.link/P2279R0">P2279R0</a>:
+    Language mechanism for customization points 
+* <a href="https://wg21.link/P2123R0">P2123R0</a>:
+    Interfaces: A Facility to Manage ABI/API Evolution
+* <a href="https://wg21.link/P2168R1">P2168R1</a>:
+    `std::generator`
+* <a href="https://wg21.link/P2322R2">P2322R2</a>:
+    `ranges::fold`
+* <a href="https://wg21.link/P2276R0">P2276R0</a>:
+    Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
+* <a href="https://wg21.link/P2302R0">P2302R0</a>:
+    Prefer `std::ranges::contains` over `std::basic_string_view::contains`
+* <a href="https://wg21.link/P2372R0">P2372R0</a>:
+    Fixing locale handling in chrono formatters
+      (C++20 backport)
+* <a href="https://wg21.link/P2093R5">P2093R5</a>:
+    Formatted Output
+* <a href="https://wg21.link/P0533R6">P0533R6</a>:
+    `constexpr` for `<cmath>`
+* <a href="https://wg21.link/P2273R0">P2273R0</a>:
+    `constexpr` `std::unique_ptr`
+* <a href="https://wg21.link/P0870R4">P0870R4</a>:
+    A proposal for a type trait to detect narrowing conversions
+* <a href="https://wg21.link/P1030R4">P1030R4</a>:
+    `std::filesystem::path_view`
+* <a href="https://wg21.link/P1072R7">P1072R7</a>:
+    `basic_string::resize_and_overwrite`
+* <a href="https://wg21.link/P2301R0">P2301R0</a>:
+    Add a `pmr` alias for `stacktrace`
+* <a href="https://wg21.link/P1315R7">P1315R7</a>:
+    `memset_explicit`
+* <a href="https://wg21.link/P2340R0">P2340R0</a>:
+    Clarifying the status of the "C headers"
 
 The following papers were reviewed on the mailing list:
 
-TODO
+* <a href="https://wg21.link/P2286R0">P2286R0</a>:
+    Formatting Ranges
+* <a href="https://wg21.link/P2273R0">P2273R0</a>:
+    `constexpr` `unique_ptr`
+* <a href="https://wg21.link/P2283R0">P2283R0</a>:
+    `constexpr` `<memory>` algorithms
+* <a href="https://wg21.link/P2291R0">P2291R0</a>:
+    Add `constexpr` Modifiers to Functions `to_chars` and `from_chars` for Integral Types
+* <a href="https://wg21.link/P2255R1">P2255R1</a>:
+    A type trait to detect reference binding to temporary
+* <a href="https://wg21.link/P2248R1">P2248R1</a>:
+    Enabling list-initialization for algorithms
+* <a href="https://wg21.link/P1068R5">P1068R5</a>:
+    Vector API for Random Number Generation
+* <a href="https://wg21.link/P2047R0">P2047R0</a>:
+    An allocator-aware `optional` type
+
