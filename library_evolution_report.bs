@@ -1,9 +1,9 @@
 <pre class='metadata'>
-Title: Library Evolution Report: 2021-02-23
+Title: Library Evolution Report: 2021-02-23 to 2021-05-25
 H1: Library Evolution Report: <br>2021-02-23 to 2021-05-25
-Shortname: D2400
+Shortname: P2400
 Revision: 1
-Status: D
+Status: P
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -11,7 +11,7 @@ Editor: Fabio Fracassi — Library Evolution Vice Chair, CODE University of Appl
 Editor: Ben Craig — Library Evolution Vice Chair, NI, ben.craig@gmail.com
 Editor: Billy Baker — Library Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
 Editor: Nevin Liber — Library Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
-Editor: Inbal Levi — Library Mailing List Review Manager and Algorithms Task Force Chair, sinbal2l@gmail.com
+Editor: Inbal Levi — Ranges Chair (SG9) and Library Mailing List Review Manager, sinbal2l@gmail.com
 Editor: Corentin Jabot — Library Mailing List Review Manager, corentin.jabot@gmail.com
 URL: https://wg21.link/P2400
 !Source: <a href="https://github.com/brycelelbach/wg21_p2400_library_evolution_report/blob/main/library_evolution_report.bs">GitHub</a>
