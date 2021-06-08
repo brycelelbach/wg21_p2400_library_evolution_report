@@ -1,9 +1,9 @@
 <pre class='metadata'>
 Title: Library Evolution Report: 2021-02-23 to 2021-05-25
 H1: Library Evolution Report: <br>2021-02-23 to 2021-05-25
-Shortname: P2400
-Revision: 1
-Status: P
+Shortname: D2400
+Revision: 2
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
