@@ -1,35 +1,39 @@
 Telecons:
 
-* [[P0323R9]]: `std::expected`
-* [[P0533R6]]: `constexpr` for `<cmath>`
-* [[P0870R4]]: A proposal for a type trait to detect narrowing conversions
-* [[P1030R4]]: `std::filesystem::path_view`
-* [[P1072R7]]: `basic_string::resize_and_overwrite`
-* [[P1315R7]]: `memset_explicit`
-* [[P2093R5]]: Formatted Output
-* [[P2123R0]]: Interfaces: A Facility to Manage ABI/API Evolution
-* [[P2168R1]]: `std::generator`
-* [[P2251R0]]: Require `span` & `basic_string_view` to be Trivially Copyable
-* [[P2273R0]]: `constexpr` `std::unique_ptr`
-* [[P2276R0]]: Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
-* [[P2279R0]]: Language mechanism for customization points 
-* [[P2301R0]]: Add a `pmr` alias for std::stacktrace
-* [[P2302R0]]: Prefer `std::ranges::contains` over `std::basic_string_view::contains`
-* [[P2321R0]]: `views::zip`
-* [[P2322R2]]: `ranges::fold`
-* [[P2325R1]]: Views should not be required to be default constructible
-* [[P2328R0]]: `join_view` should join all views of ranges
-* [[P2340R0]]: Clarifying the status of the "C headers"
-* [[P2372R0]]: Fixing locale handling in chrono formatters
+* [[P0009R12]]: `mdspan`
+* [[P1206R6]]: Conversions from ranges to containers
+* [[P1383R0]]: More constexpr for `<cmath>`
+* [[P2337R0]]: Less constexpr for `<cmath>`
+* [[P1664R3]]: `ranges]]:]]:reconstructible_range`
+* [[P1673R3]]: BLAS Linear Algebra
+* [[P1885R5]]: Naming Text Encodings to Demystify Them
+* [[P2138R4]]: Rules of Design <=> Specification Engagement
+* [[P2276R1]]: Fix `std]]:]]:cbegin()`, `std]]:]]:ranges]]:]]:cbegin`, and `cbegin()` for `span`
+* [[P2286R2]]: Formatting Ranges
+* [[P2299R3]]: `mdspan`s of All Dynamic Extents
+* [[P2300R1]]: `std]]:]]:execution`
+* [[P2345R0]]: Relaxing Requirements of Moved-From Objects
+* [[P2372R1]]: Fixing locale handling in chrono formatters
+* [[P2374R1]]: `views]]:]]:cartesian_product`
+* [[P2412R0]]: Minimal Module Support for the Standard Library
+* [[P2415R1]]: What is a `view`?
+* [[P2418R0]]: Adding support for `std]]:]]:generator` to `std]]:]]:format`
+* [[P2428R0]]: Issues and questions with P2300 `std]]:]]:execution`
+* [[P2432R0]]: Fix `istream_view`
+* [[P2444R0]]: Asio Async Model (Joint Session with SG1)
 
 Mailing List:
 
+* [[P2332R0]]: Establishing `std]]:]]:hive` as replacement name for the proposed `std]]:]]:colony` container
+* [[P2066R7]]: Suggested draft TS for C++ Extensions for Minimal Transactional Memory
+* [[P1339R1]]: Disallowing the friending of names in namespace `std`
+* [[P2226R0]]: A proposal for an idiom to move from an object and reset it to its default constructed state
+* [[P2291R1]]: Add Constexpr Modifiers to Functions `to_chars` and `from_chars` for Integral Types in Header
+* [[P2249R0]]: Mixed comparisons for smart pointers
+* [[P2351R0]]: Mark all library static cast wrappers as `[[nodiscard]]`
+* [[P2377R0]]: `[[nodiscard]]` in the Standard Library]]: Clause 23 Iterators library
+* [[P0493R2]]: Atomic maximum/minimum
+* [[P2413R0]]: Remove unsafe conversions of `unique_ptr`
+* [[P2370R0]]: Stacktrace from exception
+* [[P2417R0]]: A more `constexpr` bitset
 
-* [[P1068R5]]: Vector API for Random Number Generation
-* [[P2047R0]]: An allocator-aware `optional` type
-* [[P2248R1]]: Enabling list-initialization for algorithms
-* [[P2255R1]]: A type trait to detect reference binding to temporary
-* [[P2273R0]]: `constexpr` `std::unique_ptr`
-* [[P2283R0]]: `constexpr` `<memory>` algorithms
-* [[P2286R0]]: Formatting Ranges
-* [[P2291R0]]: Add `constexpr` Modifiers to Functions `to_chars` and `from_chars` for Integral Types
