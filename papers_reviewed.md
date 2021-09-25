@@ -47,7 +47,7 @@ Mailing List:
 * [[P2291R1]]: Add Constexpr Modifiers to Functions `to_chars` and `from_chars` for Integral Types in Header
 * [[P2249R0]]: Mixed comparisons for smart pointers
 * [[P2351R0]]: Mark all library static cast wrappers as `[[nodiscard]]`
-* [[P2377R0]]: `[[nodiscard]]` in the Standard Library]]: Clause 23 Iterators library
+* [[P2377R0]]: `[[nodiscard]]` in the Standard Library: Clause 23 Iterators library
 * [[P0493R2]]: Atomic maximum/minimum
 * [[P2413R0]]: Remove unsafe conversions of `unique_ptr`
 * [[P2370R0]]: Stacktrace from exception

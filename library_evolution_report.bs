@@ -615,7 +615,7 @@ The following papers were reviewed on the Library Evolution mailing list:
 * <a href="https://wg21.link/P2291R1">P2291R1</a>: Add Constexpr Modifiers to Functions `to_chars` and `from_chars` for Integral Types in Header
 * <a href="https://wg21.link/P2249R0">P2249R0</a>: Mixed comparisons for smart pointers
 * <a href="https://wg21.link/P2351R0">P2351R0</a>: Mark all library static cast wrappers as `[[nodiscard]]`
-* <a href="https://wg21.link/P2377R0">P2377R0</a>: `[[nodiscard]]` in the Standard Library]]: Clause 23 Iterators library
+* <a href="https://wg21.link/P2377R0">P2377R0</a>: `[[nodiscard]]` in the Standard Library: Clause 23 Iterators library
 * <a href="https://wg21.link/P0493R2">P0493R2</a>: Atomic maximum/minimum
 * <a href="https://wg21.link/P2413R0">P2413R0</a>: Remove unsafe conversions of `unique_ptr`
 * <a href="https://wg21.link/P2370R0">P2370R0</a>: Stacktrace from exception
