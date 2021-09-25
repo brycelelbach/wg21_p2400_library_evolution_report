@@ -66,7 +66,15 @@ Prior Library Evolution reports:
 
 ## C++23 Schedule ## {#c++23-schedule}
 
-TODO
+We are now approaching the end of the C++23 design cycle.
+
+As per <a href="https://wg21.link/P1000R4">P1000R4</a> (C++ IS Schedule), C++23
+  needs to be feature complete by the 2022-02 plenary meeting.
+Any papers targeting C++23 will have to be advanced to electronic polling by
+  the end of 2021, so that we can conduct a final electronic polling period.
+
+C++23 will be the first C++ design cycle developed entirely under
+  <a href="https://wg21.link/P2145R1">our remote procedures</a>.
 
 ## Telecons ## {#telecons}
 
@@ -170,7 +178,7 @@ More details on how we use mailing lists can be found in
 <th># of Papers
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Alibrary-evolution-deferred">Active</a>
-<td>46
+<td>41
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+-label%3Aneeds-revision+-label%3Aready-for-library-evolution-meeting-review+-label%3Aready-for-library-evolution-mailing-list-review+-label%3Aready-for-library-evolution-electronic-poll+-label%3Aexpedited-library-evolution-electronic-poll+-label%3Alibrary-evolution-deferred">Ready for Triage</a>
 <td>0
@@ -197,7 +205,7 @@ More details on how we use mailing lists can be found in
 <td>1
 <tr>
 <td><a href="https://github.com/cplusplus/papers/issues?q=is%3Aissue+is%3Aopen+label%3ALEWG+label%3Aready-for-library-evolution-electronic-poll+label%3Ascheduled-for-library-evolution">Scheduled for Electronic Poll</a>
-<td>5
+<td>0
 </table></center>
 
 The above information is as of the publication of this paper.
@@ -219,18 +227,40 @@ The following polling periods have been conducted over the past year:
 * 2021 Winter - completed, outcomes can be found in
     <a href="https://wg21.link/P2368R0">P2368R0</a>.
 * 2021 Spring - completed, outcomes can be found in
-    <a href="https://wg21.link/P2384R0">P2384R0</a>.
+    <a href="https://isocpp.org/files/papers/P2384R1.html">P2384R1</a>.
 * 2021 Summer - completed, outcomes can be found in
-    <a href="https://wg21.link/P2435R0">P2435R0</a>.
-* 2021 September - ongoing, polls can be found in
-    <a href="https://wg21.link/P2436R0">P2436R0</a>.
+    <a href="https://isocpp.org/files/papers/P2435R1.html">P2435R1</a>.
+* 2021 September - completed, outcomes can be found in
+    <a href="https://isocpp.org/files/papers/P2451R0.html">P2451R0</a>.
 
 More details on electronic polling can be found in
   <a href="https://wg21.link/P2195R2">P2195R2</a>.
 
 ## Expedited Advancement to Electronic Polling ## {#expedited-electronic-polling}
 
-TODO
+Library Evolution telecons are the best way for us to review papers remotely,
+  but our telecon time is limited.
+We started mailing list reviews of papers to reduce the demands on Library
+  Evolution telecon time, but until recently, all papers have still required
+  some telecon review before they are advanced to electronic polls and out
+  of Library Evolution.
+
+In the last few months, we have begun experimenting with advancing papers
+  directly from mailing list review to electronic polling.
+The procedure is intended for smaller matters, non-controversial matters, and
+  matters that we believe will not benefit from telecon discussion.
+It works as follows:
+
+0.) A mailing list thread is started on lib-ext@ proposing that a paper be
+      advanced directly to electronic polling.
+    Background on the paper, its maturity, and the outcomes of previous
+      discussions is provided.
+1.) Participants are asked to take a stance on the motion by replying with
+      either a "+1" or a "-1".
+2.) When the thread reaches its nature conclusion, the chairs determine whether
+      it is suitable for the paper to proceed to electronic polling.
+    Typically, we are looking for strong and vocal support; a lack of objections
+      is not sufficient.
 
 ## Prioritization ## {#prioritization}
 
@@ -305,11 +335,36 @@ This section describes the status of the priority Standard Library features
 
 ### Executors ### {#executors}
 
-TODO
+Over the Summer of 2021, Library Evolution reviewed
+  <a href="https://wg21.link/P2300R0">P2300R0</a> (`std::execution`), a new
+  streamlined Executors proposal from some of the authors of
+  <a href="https://wg21.link/P0443R14">P0443R14</a> (A Unified Executors Proposal
+  for C++).
+The aim of P2300 was to simplify Executors down to a minimal core and make the
+  proposal more accessible and easier to understand.
+The new proposal was well received by Library Evolution, and we had consensus
+  that we want to proceed with P2300 instead of P0443.
+
+However, there is still disagreement between the proponents of P2300 and the
+  proponents of <a href="https://wg21.link/P2444R0">P2444R0</a>, the async
+  model of the Networking TS.
+During our discussions, we have begun to question whether we need to pursue
+  a single unified asynchronous model for both the Networking TS and structured
+  concurrency.
+
+It is unclear at this point whether P2300, or any other form of Executors, will
+  be ready for C++23.
+While we have consensus on the design of P2300, there are still questions about
+  field experience and maturity.
+Given that the window for C++23 closes at the end of 2021, the likelihood of
+  including Executors in C++23 is rapidly diminishing.
 
 ### Networking ### {#networking}
 
-TODO
+As part of our discussion of Executors and its relationship to the Networking TS,
+  some have suggested that we should consider shipping the Networking TS as-is
+  in C++23.
+This will be given due consideration and a decision will be made by 2021-10.
 
 ### Coroutines Library Support ### {#coroutines-library-support}
 
@@ -328,7 +383,17 @@ Some of the other work on Coroutines Library Support depends on Executors and
 
 ### Standard Library Modules ### {#standard-library-modules}
 
-TODO
+In 2021-09, we reviewed <a href="https://wg21.link/P2412R0">P2412R0</a> (Minimal
+  Modules for the Standard Library), which proposes that we add one big `std`
+  module for C++23.
+Library Evolution was in favor of this plan.
+The paper should return for another round of review in 2021-10, at which point
+  it will hopefully be advanced to electronic polling for C++23.
+
+We also plan to review the latest revision of
+  <a href="https://wg21.link/P0581R2">P0581R2</a> (Standard Library Modules), a
+  more future looking proposal that suggests a fine grained set of standard
+  library modules in addition to one big `std` module.
 
 ## Stability ## {#stability}
 
@@ -356,9 +421,12 @@ When we make these changes, we are effectively changing a C++ Standard after it
 This can cause a great deal of uncertainty in the ecosystem for both users and
   vendors, because it makes it unclear when a C++ Standard is complete and
   stable.
+It may even slow down adoption of C++20.
+As such, this is a tool we must use very delicately.
 
 Over the past few months, Library Evolution has taken advantage of this window
-  to fix a number of issues impacting ranges and text formatting in C++20:
+  to fix a number of issues, mostly relating to ranges and text formatting in
+  C++20:
 
 * <a href="https://wg21.link/P2372R0">P2372R0</a>:
     Fixing locale handling in chrono formatters
@@ -370,9 +438,24 @@ Over the past few months, Library Evolution has taken advantage of this window
     Views should not be required to be default constructible
 * <a href="https://wg21.link/P2210R2">P2210R2</a>:
     Superior string splitting
-* TODO
+* <a href="https://wg21.link/P2367R0">P2367R0</a>: Remove misuses of
+    list-initialization from Clause 24
+* <a href="https://wg21.link/P2281R1">P2281R1</a>: Clarifying range adaptor
+    objects
+* <a href="https://wg21.link/P2231R1">P2231R1</a>: Missing constexpr in
+    `optional` and `variant`
+* <a href="https://wg21.link/P2166R1">P2166R1</a>: Prohibit `basic_string` and
+    `basic_string_view` construction from `nullptr`
 
-Library Evolution does not expect to consider any additional defect reports for
+We expect the following three C++20 backports to be moved at the 2021-10
+  plenary meeting:
+
+* <a href="https://wg21.link/P2418R2">P2418R2</a>: Add support for
+    `std::generator`-like types to `std::format`
+* <a href="https://wg21.link/P2415R2">P2415R2</a>: What is a `view`?
+* <a href="https://wg21.link/P2432R1">P2432R1</a>: Fix `istream_view`
+
+Library Evolution does not expect to consider any additional backports for
   C++20.
 
 The above information is as of the publication of this paper.
@@ -385,101 +468,156 @@ For up to date information and more details on Library backports
 
 We are making significant progress on the objectives laid out in
   <a href="https://wg21.link/P2214R0">P2214R0</a> (A Plan for C++23 Ranges).
+We expect to deliver at least all of the tier 1 components of P2214R0.
 
-Over the past few months, we have reviewed the following ranges proposals, some
-  of which make breaking changes from C++20 and are intended as backports:
+The following ranges proposals were advanced to Library Working Group for C++23
+  by electronic poll:
 
-* <a href="https://wg21.link/P2325R1">P2325R1</a>:
-    Views should not be required to be default constructible
-      (C++20 backport)
-* <a href="https://wg21.link/P2328R0">P2328R0</a>:
-    `ranges::join_view` should join all views of ranges
-      (C++20 backport)
-* <a href="https://wg21.link/P2210R2">P2210R2</a>:
-    Superior String Splitting
-      (C++20 backport)
-* <a href="https://wg21.link/P2251R0">P2251R0</a>:
-    Require `span` & `basic_string_view` to be Trivially Copyable
-      (C++20 backport)
-* <a href="https://wg21.link/P2321R0">P2321R0</a>:
-    `views::zip`
-* <a href="https://wg21.link/P2322R2">P2322R2</a>:
-    `ranges::fold`
-* <a href="https://wg21.link/P2276R0">P2276R0</a>:
-    Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
-* <a href="https://wg21.link/P2302R0">P2302R0</a>:
-    Prefer `ranges::contains` over `basic_string_view::contains`
-* <a href="https://wg21.link/P2286R0">P2286R0</a>:
-    Formatting Ranges
-* TODO
+* <a href="https://wg21.link/P1206R6">P1206R6</a>: `ranges::to`
+* <a href="https://wg21.link/P2415R1">P2415R1</a>: What Is A `view`?
+* <a href="https://wg21.link/P2432R0">P2432R0</a>: Fix `istream_view`
 
-The following ranges proposals are scheduled for review over the next few
-  months:
+Over the past few months, we have reviewed the following ranges proposals at
+  Library Evolution telecons:
 
-* <a href="https://wg21.link/P2374R0">P2374R0</a>:
-    `views::cartesian_product`
-* <a href="https://wg21.link/P2164R4">P2164R4</a>:
-    `views::enumerate`
-* <a href="https://wg21.link/P1664R3">P1664R3</a>:
-    `ranges::reconstructible_range`
-* <a href="https://wg21.link/P1206R4">P1206R4</a>:
-    `ranges::to`
-* <a href="https://wg21.link/P2232R2">P2232R2</a>:
-    `ranges::fold`
-* <a href="https://wg21.link/P2286R1">P2286R1</a>:
-    Formatting Ranges
-* <a href="https://wg21.link/LWG3534/github">LWG3534</a>:
-    `ranges::set_intersection` and `ranges::set_difference `algorithm
-      requirements are too strict
-* TODO
+* <a href="https://wg21.link/P1206R6">P1206R6</a>: Conversions from ranges to
+  containers
+* <a href="https://wg21.link/P1664R3">P1664R3</a>: `ranges::reconstructible_range`
+* <a href="https://wg21.link/P2138R4">P2138R4</a>: Rules of Design <=>
+  Specification Engagement
+* <a href="https://wg21.link/P2276R1">P2276R1</a>: Fix `std::cbegin()`,
+  `std::ranges::cbegin`, and `cbegin()` for `span`
+* <a href="https://wg21.link/P2374R1">P2374R1</a>: `views::cartesian_product`
+
+The following ranges papers were reviewed at Ranges Study Group (SG9) telecons:
+
+* <a href="https://wg21.link/P2408R0">P2408R0</a>: Ranges views as inputs to
+  non-Ranges algorithms
+* <a href="https://wg21.link/LWG3564">LWG3564</a>:
+  `transform_view::iterator::value_type` and `iterator_category` should use
+  `const F&`
+* <a href="https://wg21.link/P2165R2">P2165R2</a>: Compatibility between
+  `tuple`, `pair` and `tuple`-like objects
+* <a href="https://wg21.link/P2387R0">P2387R0</a>: Pipe support for user-defined
+  range adaptors
+* <a href="https://wg21.link/P1664R5">P1664R5</a>: `reconstructible_range` - a
+  concept for putting ranges back together
+* <a href="https://wg21.link/LWG3564">LWG3564</a>: `transform function constness
+* <a href="https://wg21.link/LWG3534">LWG3534</a>: `ranges::set_intersection`
+  and `ranges::set_difference` algorithm requirements are too strict
 
 ### Formatting and Printing ### {#formatting-and-printing}
 
-We began reviewing <a href="https://wg21.link/P2372R0">P2372R0</a> (Fixing
-  locale handling in chrono formatters), a proposal which aims to make chrono
-  formatters locale-indepenent by default.
-This proposal is a change from C++20 and we aim to backport it.
-We will review the next revision in 2021-06.
+<a href="https://wg21.link/P2093R5">P2093R5</a> (Formatted Output) continues
+  to mature.
+The Text and Unicode group (SG16) has sent it back to Library Evolution for
+  what should be a final review for C++23 in 2021-11.
 
-We've continued our work on <a href="https://wg21.link/P2093R5">P2093R5</a>
-  (Formatted Output), which is being reviewed by both Library Evolution and the
-  Text and Unicode group (SG16).
-We expect it to be sent to us again over the summer, and hopefully it will be
-  able to advance to Library for C++23 in the next few months.
+We've made progress on <a href="https://wg21.link/P2286R1">P2286R1</a> (Formatting
+  Ranges) as well, reviewing it at a Library Evolution telecon.
+We expect it to advance in time for C++23.
 
-We've also refined <a href="https://wg21.link/P2286R1">P2286R1</a> (Formatting
-  Ranges) via mailing list to a point where it is ready for review at a Library
-  Evolution telecon, which should happen in the Summer of 2021.
+We also reviewed and advanced <a href="https://wg21.link/P2418R0">P2418R0</a>
+  (Add Support For `std::generator`-like Types To `std::format`) to Library
+  Working Group for C++23 and as a backport for C++20.
 
 ### Text and Unicode ### {#text-and-unicode}
 
-The Text and Unicode group (SG16) has forwarded us the next revision of
+We've nearly completed our work on
   <a href="https://wg21.link/P1885R5">P1885R5</a> (Naming Text Encodings to
   Demystify Them), which is a part of the roadmap laid our in
   <a href="https://wg21.link/P1238R0">P1238R0</a> (Unicode Direction) and one of
   their priorities for C++23.
-We plan to review it over the summer and hopefully advance it to Library.
+We are planning to take another look at it in the next few months and then
+  hopefully advance it for C++23.
 
-### `constexpr` `<cmath>` ### {#constexpr-cmath}
+### `constexpr`ification ### {#constexprification}
 
-TODO
+Over the summer, we advanced <a href="https://wg21.link/P0533R8">P0533R8</a>
+  (`constexpr` For `<cmath>` And `<cstdlib>`) back to Library Working Group
+  for C++23.
+We also reviewed <a href="https://wg21.link/P1383R0">P1383R0</a> (More
+  constexpr for `<cmath>`) and <a href="https://wg21.link/P2337R0">P2337R0</a>
+  (Less constexpr for `<cmath>`).
+
+We also advanced the following `constexpr`ification proposals to Library Working
+  Group by electronic poll:
+
+* <a href="https://wg21.link/P0533R8">P0533R8</a>: `constexpr` For `<cmath>` And
+  `<cstdlib>`
+* <a href="https://wg21.link/P2273R2">P2273R2</a>: Making `unique_ptr` `constexpr`
+* <a href="https://wg21.link/P2291R2">P2291R2</a>: Add `constexpr` Modifiers To
+  Functions `to_chars` And `from_chars` For Integral Types In `<charconv>` Header
+
+And the following papers were reviewed on the Library Evolution mailing list:
+
+* <a href="https://wg21.link/P2417R0">P2417R0</a>: A more `constexpr` bitset
 
 ### Linear Algebra and `mdspan` ### {#linear-algebra-and-mdspan}
 
-TODO
+We looked at <a href="https://wg21.link/P0009R12">P0009R12</a> (`mdspan`) and
+  some papers modifying it (<a href="https://wg21.link/P2299R3">P2299R3</a>)
+  over the summer.
+We decided to retarget `mdspan` for C++23.
+We expect to review the paper again in 2021-11.
 
 ## Papers Reviewed ## {#papers-reviewed}
 
 The following papers were reviewed at Library Evolution telecons and advanced
   to Library Working Group in the 2021 Summer Library Evolution polling period
-  (see <a href="https://wg21.link/P2435R0">P2435R0</a> for details):
+  (see <a href="https://wg21.link/P2435R1">P2435R1</a> for details):
 
-* TODO
+* <a href="https://wg21.link/P2372R1">P2372R1</a>: Fixing Locale Handling In Chrono Formatters
+* <a href="https://wg21.link/P1206R6">P1206R6</a>: `ranges::to`
+* <a href="https://wg21.link/P0533R8">P0533R8</a>: `constexpr` For `<cmath>` And `<cstdlib>`
+* <a href="https://wg21.link/P2273R2">P2273R2</a>: Making `unique_ptr` `constexpr`
+
+The following papers were reviewed at Library Evolution telecons and advanced
+  to Library Working Group in the 2021 September Library Evolution polling period
+  (see <a href="https://wg21.link/P2451R0">P2451R0</a> for details):
+
+* <a href="https://wg21.link/P2418R0">P2418R0</a>: Add Support For `std::generator`-like Types To `std::format`
+* <a href="https://wg21.link/P2415R1">P2415R1</a>: What Is A `view`?
+* <a href="https://wg21.link/P2432R0">P2432R0</a>: Fix `istream_view`
+* <a href="https://wg21.link/P2351R0">P2351R0</a>: Mark All Library Static Cast Wrappers As `[[nodiscard]]`
+* <a href="https://wg21.link/P2291R2">P2291R2</a>: Add `constexpr` Modifiers To Functions `to_chars` And `from_chars` For Integral Types In `<charconv>` Header
 
 The following papers were reviewed at Library Evolution telecons:
 
-* TODO
+* <a href="https://wg21.link/P0009R12">P0009R12</a>: `mdspan`
+* <a href="https://wg21.link/P1206R6">P1206R6</a>: Conversions from ranges to containers
+* <a href="https://wg21.link/P1383R0">P1383R0</a>: More constexpr for `<cmath>`
+* <a href="https://wg21.link/P2337R0">P2337R0</a>: Less constexpr for `<cmath>`
+* <a href="https://wg21.link/P1664R3">P1664R3</a>: `ranges::reconstructible_range`
+* <a href="https://wg21.link/P1673R3">P1673R3</a>: BLAS Linear Algebra
+* <a href="https://wg21.link/P1885R5">P1885R5</a>: Naming Text Encodings to Demystify Them
+* <a href="https://wg21.link/P2138R4">P2138R4</a>: Rules of Design <=> Specification Engagement
+* <a href="https://wg21.link/P2276R1">P2276R1</a>: Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
+* <a href="https://wg21.link/P2286R2">P2286R2</a>: Formatting Ranges
+* <a href="https://wg21.link/P2299R3">P2299R3</a>: `mdspan`s of All Dynamic Extents
+* <a href="https://wg21.link/P2300R1">P2300R1</a>: `std::execution`
+* <a href="https://wg21.link/P2345R0">P2345R0</a>: Relaxing Requirements of Moved-From Objects
+* <a href="https://wg21.link/P2372R1">P2372R1</a>: Fixing locale handling in chrono formatters
+* <a href="https://wg21.link/P2374R1">P2374R1</a>: `views::cartesian_product`
+* <a href="https://wg21.link/P2412R0">P2412R0</a>: Minimal Module Support for the Standard Library
+* <a href="https://wg21.link/P2415R1">P2415R1</a>: What is a `view`?
+* <a href="https://wg21.link/P2418R0">P2418R0</a>: Adding support for `std::generator` to `std::format`
+* <a href="https://wg21.link/P2428R0">P2428R0</a>: Issues and questions with P2300 `std::execution`
+* <a href="https://wg21.link/P2432R0">P2432R0</a>: Fix `istream_view`
+* <a href="https://wg21.link/P2444R0">P2444R0</a>: Asio Async Model
 
-The following papers were reviewed on the mailing list:
+The following papers were reviewed on the Library Evolution mailing list:
 
-* TODO
+* <a href="https://wg21.link/P2332R0">P2332R0</a>: Establishing `std::hive` as replacement name for the proposed `std::colony` container
+* <a href="https://wg21.link/P2066R7">P2066R7</a>: Suggested draft TS for C++ Extensions for Minimal Transactional Memory
+* <a href="https://wg21.link/P1339R1">P1339R1</a>: Disallowing the friending of names in namespace `std`
+* <a href="https://wg21.link/P2226R0">P2226R0</a>: A proposal for an idiom to move from an object and reset it to its default constructed state
+* <a href="https://wg21.link/P2291R1">P2291R1</a>: Add Constexpr Modifiers to Functions `to_chars` and `from_chars` for Integral Types in Header
+* <a href="https://wg21.link/P2249R0">P2249R0</a>: Mixed comparisons for smart pointers
+* <a href="https://wg21.link/P2351R0">P2351R0</a>: Mark all library static cast wrappers as `[[nodiscard]]`
+* <a href="https://wg21.link/P2377R0">P2377R0</a>: `[[nodiscard]]` in the Standard Library]]: Clause 23 Iterators library
+* <a href="https://wg21.link/P0493R2">P0493R2</a>: Atomic maximum/minimum
+* <a href="https://wg21.link/P2413R0">P2413R0</a>: Remove unsafe conversions of `unique_ptr`
+* <a href="https://wg21.link/P2370R0">P2370R0</a>: Stacktrace from exception
+* <a href="https://wg21.link/P2417R0">P2417R0</a>: A more `constexpr` bitset
+
