@@ -321,16 +321,16 @@ This section describes the status of the priority Standard Library features
 <th>Status
 <tr>
 <td>Executors
-<td>Revision expected in the 2021-06 mailing. Library Evolution review expected in 2021-07.
-<tr>
-<td>Coroutines Library Support
-<td>Parts under review. <span class="warning">Parts need authors and papers</span>.
+<td>Review scheduled. <span class="warning">At risk for C++23.</span>
 <tr>
 <td>Networking
-<td><span class="warning">At risk for C++23. Unlikely to make it due to dependencies and time constraints.</span>
+<td>Review scheduled. <span class="warning">At risk for C++23.</span>
+<tr>
+<td>Coroutines Library Support
+<td>Waiting for revisions. <span class="warning">At risk for C++23; active authors and champions needed.</span>
 <tr>
 <td>Standard Library Modules
-<td><span class="warning">At risk for C++23. Needs authors and papers.</span>
+<td>Review scheduled. On track for C++23.
 </table></center>
 
 ### Executors ### {#executors}
