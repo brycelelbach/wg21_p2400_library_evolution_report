@@ -236,7 +236,7 @@ The following polling periods have been conducted over the past year:
 More details on electronic polling can be found in
   <a href="https://wg21.link/P2195R2">P2195R2</a>.
 
-## Expedited Advancement to Electronic Polling ## {#expedited-electronic-polling}
+### Expedited Advancement to Electronic Polling ### {#expedited-electronic-polling}
 
 Library Evolution telecons are the best way for us to review papers remotely,
   but our telecon time is limited.
