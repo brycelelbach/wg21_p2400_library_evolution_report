@@ -502,7 +502,7 @@ The following ranges papers were reviewed at Ranges Study Group (SG9) telecons:
   range adaptors
 * <a href="https://wg21.link/P1664R5">P1664R5</a>: `reconstructible_range` - a
   concept for putting ranges back together
-* <a href="https://wg21.link/LWG3564">LWG3564</a>: `transform function constness
+* <a href="https://wg21.link/LWG3564">LWG3564</a>: `transform` function constness
 * <a href="https://wg21.link/LWG3534">LWG3534</a>: `ranges::set_intersection`
   and `ranges::set_difference` algorithm requirements are too strict
 
