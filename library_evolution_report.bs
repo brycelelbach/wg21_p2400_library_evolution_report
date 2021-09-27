@@ -82,7 +82,7 @@ Since 2020-04, Library Evolution has held a 90 minute telecon twice a week to
   review papers.
 Typically, 1 or 2 papers are reviewed at each telecon.
 
-Library Evolution is planning on holding additional telecons in 2020-10 to help
+Library Evolution is planning on holding additional telecons in 2021-10 to help
   complete C++23.
 These extra telecons will be held over the course of two days and will be between
   3 and 4 hours.
