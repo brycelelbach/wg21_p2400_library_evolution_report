@@ -305,6 +305,7 @@ Additionally, the following noble individuals take minutes for Library
 * Mark Hoemmen
 * Guy Davidson
 * Dietmar Kühl
+* Gašper Ažman
 
 # Technical # {#technical}
 
