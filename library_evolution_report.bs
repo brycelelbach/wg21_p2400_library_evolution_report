@@ -307,6 +307,7 @@ Additionally, the following noble individuals take minutes for Library
 * Dietmar Kühl
 * Gašper Ažman
 * Steve Downey
+* Bronek Kozicki
 
 # Technical # {#technical}
 
