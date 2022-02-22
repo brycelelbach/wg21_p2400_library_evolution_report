@@ -1,55 +1,123 @@
-2021 Summer Polls:
+2021-10-04 October Polls:
 
-* [[P2138R4]]: Rules of Design <=> Wording Engagement (no consensus)
-* [[P2372R1]]: Fixing Locale Handling In Chrono Formatters
-* [[P1206R6]]: `ranges::to`
-* [[P0533R8]]: `constexpr` For `<cmath>` And `<cstdlib>`
-* [[P2273R2]]: Making `unique_ptr` `constexpr`
+* [[P2300R4]]: `std::execution`
+* [[P2444R0]]: Asio async model
 
-2021 September Polls:
+2021 November Polls:
 
-* [[P2418R0]]: Add Support For `std::generator`-like Types To `std::format`
-* [[P2415R1]]: What Is A `view`?
-* [[P2432R0]]: Fix `istream_view`
-* [[P2351R0]]: Mark All Library Static Cast Wrappers As `[[nodiscard]]`
-* [[P2291R2]]: Add `constexpr` Modifiers To Functions `to_chars` And `from_chars` For Integral Types In `<charconv>` Header
+* [[P2465R1]]: Standard library modules `std` and `std.compat`
+* [[P2387R2]]: Pipe support for user-defined range adaptors
+* [[P2443R0]]: `views::chunk_by`
+* [[P2442R0]]: `views::chunk` and `views::slide`
+* [[P2440R0]]: `ranges::iota`, `ranges::shift_left`, and `ranges::shift_right`
+* [[P2255R2]]: A type trait to detect reference binding to temporary
+* [[P1885R8]]: Naming text encodings to demystify them
+* [[P2419R1]]: Clarify handling of encodings in localized formatting of chrono types
+* [[P2460R0]]: Relax requirements on `wchar_t` to match existing practices
+* [[P2445R0]]: `forward_like`
+* [[P2417R0]]: A more `constexpr` `bitset`
+* [[P1841R1]]: Wording for individually specializable numeric traits
+* [[P0627R6]]: `unreachable`
+
+2021 December Polls:
+
+* [[P0009R14]]: `mdspan`
+* [[P2093R11]]: Formatted Output
+* [[P1467R7]]: Extended floating-point types
+* [[P2278R2]]: `cbegin` should always return a constant iterator
+* [[P2408R4]]: Ranges iterators as inputs to non-ranges algorithms
+* [[P2374R3]]: `views::cartesian_product`
+* [[P2441R1]]: `views::join_with`
+* [[P2446R1]]: `views::all_move`
+* [[P2467R0]]: Support exclusive mode for `fstream`s
+* [[P2438R1]]: `string::substr() &&`
+* [[P2396R0]]: Concurrency TS v2 fixes
+* [[P2198R3]]: Freestanding feature-test macros and implementation-defined extensions
+
+2022 January Polls:
+
+* [[P2300R4]]: `std::execution`
+* [[P2363R3]]: Extending associative containers with the remaining heterogeneous overloads
+* [[P0493R3]]: Atomic maximum/minimum
+* [[P2286R6]]: Formatting ranges
+* [[P2165R3]]: Compatibility between `tuple`, `pair`, and `tuple`-like objects
+* [[P2494R1]]: Relaxing range adaptors to allow for move only types
+* [[P2322R5]]: `ranges::fold`
+* [[P2302R2]]: `ranges::contains`
+* [[P1899R2]]: `views::stride`
+* [[P2474R1]]: `views::repeat`
+* [[P2508R1]]: Expose `basic-format-string<charT, Args...>`
+* [[P2248R4]]: Enabling list-initialization for algorithms
+* [[P2404R2]]: Move-only types for `equality_comparable_with`, `totally_ordered_with`, and `three_way_comparable_with`
+* [[P2502R1]]: `std::generator`
 
 Telecons:
 
-* [[P0009R12]]: `mdspan`
-* [[P1206R6]]: Conversions from ranges to containers
-* [[P1383R0]]: More constexpr for `<cmath>`
-* [[P2337R0]]: Less constexpr for `<cmath>`
-* [[P1664R3]]: `ranges::reconstructible_range`
-* [[P1673R3]]: BLAS Linear Algebra
-* [[P1885R5]]: Naming Text Encodings to Demystify Them
-* [[P2138R4]]: Rules of Design <=> Specification Engagement
-* [[P2276R1]]: Fix `std::cbegin()`, `std::ranges::cbegin`, and `cbegin()` for `span`
-* [[P2286R2]]: Formatting Ranges
-* [[P2299R3]]: `mdspan`s of All Dynamic Extents
-* [[P2300R1]]: `std::execution`
-* [[P2345R0]]: Relaxing Requirements of Moved-From Objects
-* [[P2372R1]]: Fixing locale handling in chrono formatters
-* [[P2374R1]]: `views::cartesian_product`
-* [[P2412R0]]: Minimal Module Support for the Standard Library
-* [[P2415R1]]: What is a `view`?
-* [[P2418R0]]: Adding support for `std::generator` to `std::format`
-* [[P2428R0]]: Issues and questions with P2300 `std::execution`
-* [[P2432R0]]: Fix `istream_view`
-* [[P2444R0]]: Asio Async Model
+* [[P2300R4]]: `std::execution`
+* [[P2444R0]]: Asio async model
+* [[P2464R0]]: Ruminations on networking and executors
+* [[P2469R0]]: Response to P2464 the networking ts is baked, P2300 sender/receiver is not
+* [[P2465R1]]: Standard library modules `std` and `std.compat`
+* [[P2442R0]]: `views::chunk` and `views::slide`
+* [[P2443R0]]: `views::chunk_by`
+* [[P2374R3]]: `views::cartesian_product`
+* [[P2446R1]]: `views::all_move`
+* [[P2441R1]]: `views::join_with`
+* [[P2474R1]]: `views::repeat`
+* [[P2440R0]]: `ranges::iota`, `ranges::shift_left`, and `ranges::shift_right`
+* [[P2322R5]]: `ranges::fold`
+* [[P2387R2]]: Pipe support for user-defined range adaptors
+* [[P2494R1]]: Relaxing range adaptors to allow for move only types
+* [[P2255R2]]: A type trait to detect reference binding to temporary
+* [[P2278R2]]: `cbegin` should always return a constant iterator
+* [[P0009R14]]: `mdspan`
+* [[P1885R8]]: Naming text encodings to demystify them
+* [[P2445R0]]: `forward_like`
+* [[P1467R7]]: Extended floating point types
+* [[P2286R6]]: Formatting ranges
+* [[P2093R11]]: Formatted output
+* [[P2198R3]]: Freestanding feature-test macros and implementation-defined extensions
+* [[P2502R1]]: `std::generator`
+* [[P2529R0]]: `std::generator` should have `T&&` `reference_type`
+* [[P0493R3]]: Atomic maximum/minimum
+* [[P2486R1]]: Structured naming for function object and CPO values
+* [[P2165R3]]: Compatibility between `tuple`, `pair`, and `tuple`-like objects
+* [[P2508R1]]: Expose `basic-format-string<charT, Args...>`
+
+2021 October Supertelecon:
+
+* [[P2300R4]]: `std::execution`
+* [[P2322R5]]: `ranges::fold`
+* [[P2440R0]]: `ranges::iota`, `ranges::shift_left`, and `ranges::shift_right`
+* [[P2387R2]]: Pipe support for user-defined range adaptors
+
+2021 November Supertelecon:
+
+* [[P2300R4]]: `std::execution`
+
+2022 January Supertelecon:
+
+* [[P2300R4]]: `std::execution`
 
 Mailing List:
 
-* [[P2332R0]]: Establishing `std::hive` as replacement name for the proposed `std::colony` container
-* [[P2066R7]]: Suggested draft TS for C++ Extensions for Minimal Transactional Memory
-* [[P1339R1]]: Disallowing the friending of names in namespace `std`
-* [[P2226R0]]: A proposal for an idiom to move from an object and reset it to its default constructed state
-* [[P2291R1]]: Add Constexpr Modifiers to Functions `to_chars` and `from_chars` for Integral Types in Header
-* [[P2249R0]]: Mixed comparisons for smart pointers
-* [[P2351R0]]: Mark all library static cast wrappers as `[[nodiscard]]`
-* [[P2377R0]]: `[[nodiscard]]` in the Standard Library: Clause 23 Iterators library
-* [[P0493R2]]: Atomic maximum/minimum
-* [[P2413R0]]: Remove unsafe conversions of `unique_ptr`
-* [[P2370R0]]: Stacktrace from exception
-* [[P2417R0]]: A more `constexpr` bitset
+* [[P2407R0]]: Freestanding library: partial classes
+* [[P1899R2]]: `views::stride`
+* [[P2302R2]]: `ranges::contains`
+* [[P2447R0]]: `span` and the missing constructor
+* [[P2408R4]]: Ranges iterators as inputs to non-ranges algorithms
+* [[P2248R4]]: Enabling list-initialization for algorithms
+* [[P2405R0]]: `nullopt_t` and `nullptr_t` should both have `operator<=>` and `operator==`
+* [[P2249R1]]: Mixed comparisons for smart pointers
+* [[P2404R2]]: Move-only types for `equality_comparable_with`, `totally_ordered_with`, and `three_way_comparable_with`
+* [[P2438R1]]: `string::substr() &&`
+* [[P2363R3]]: Extending associative containers with the remaining heterogeneous overloads
+* [[P2419R1]]: Clarify handling of encodings in localized formatting of chrono types
+* [[P2460R0]]: Relax requirements on `wchar_t` to match existing practices
+* [[P2467R0]]: Support exclusive mode for `fstream`s
+* [[P1841R1]]: Wording for individually specializable numeric traits
+* [[P0627R6]]: `unreachable`
+* [[P2396R0]]: Concurrency TS v2 fixes
+
+* [[P2489R0]]: Library Evolution plan for completing C++23
 
