@@ -1,4 +1,4 @@
-2021-10-04 October Polls:
+2021 October Polls:
 
 * [[P2300R4]]: `std::execution`
 * [[P2444R0]]: Asio async model
@@ -118,6 +118,4 @@ Mailing List:
 * [[P1841R1]]: Wording for individually specializable numeric traits
 * [[P0627R6]]: `unreachable`
 * [[P2396R0]]: Concurrency TS v2 fixes
-
-* [[P2489R0]]: Library Evolution plan for completing C++23
 
