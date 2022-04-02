@@ -105,7 +105,7 @@ Our efforts will briefly shift away from C++26 in 2022-Fall so that we can
 
 ## Telecons ## {#telecons}
 
-Since 2020-04, Library Evolution has held a 1.5 hour telecon twice a week to
+Since 2020-04, Library Evolution has held a 1.5 hour telecon once a week to
   review papers.
 Typically, 1 or 2 papers are reviewed at each telecon.
 
