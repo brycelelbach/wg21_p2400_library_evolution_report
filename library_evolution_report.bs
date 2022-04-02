@@ -446,7 +446,7 @@ We discussed the Networking Technical Specification, [[N4771]], in 2021-Fall,
   Poll Outcomes.
 
 The Networking TS we have today uses a different asynchrony model from
-  [[P2300R0]] Senders and Receivers.
+  [[P2300R4]] Senders and Receivers.
 Library Evolution has expressed a desire to have a single model for asynchrony
   in the Standard Library and has consensus in favor of the Senders and Receivers
   design.
@@ -584,8 +584,8 @@ The following papers were advanced to to Library Working Group for C++23 in the
 The following papers were advanced to to Library Working Group for C++23 in the
   2021-12 Library Evolution polling period (see [[P2457R0]] for details):
 
-* [[P0009R14]]: `mdspan`
-* [[P2093R11]]: Formatted Output
+* [[P0009R16]]: `mdspan`
+* [[P2093R13]]: Formatted Output
 * [[P1467R7]]: Extended Floating-Point Types
 * [[P2278R2]]: `cbegin` Should Always Return A Constant Iterator
 * [[P2408R4]]: Ranges Iterators As Inputs To Non-Ranges Algorithms
@@ -653,7 +653,7 @@ The following papers were reviewed at Library Evolution telecons between
 * [[P2445R0]]: `forward_like`
 * [[P1467R7]]: Extended Floating Point Types
 * [[P2286R6]]: Formatting Ranges
-* [[P2093R11]]: Formatted Output
+* [[P2093R13]]: Formatted Output
 * [[P2198R3]]: Freestanding Feature-Test Macros And Implementation-Defined Extensions
 * [[P2502R1]]: `std::generator`
 * [[P2529R0]]: `std::generator` Should Have `T&&` `reference_type`
@@ -664,14 +664,14 @@ The following papers were reviewed at Library Evolution telecons between
 
 The following papers were reviewed at Library Evolution 2021-10 supertelecon:
 
-* [[P2300R3]]: `std::execution`
+* [[P2300R4]]: `std::execution`
 * [[P2322R5]]: `ranges::fold`
 * [[P2440R0]]: `ranges::iota`, `ranges::shift_left`, And `ranges::shift_right`
 * [[P2387R2]]: Pipe Support For User-Defined Range Adaptors
 
 The following papers were reviewed at Library Evolution 2021-11 supertelecon:
 
-* [[P2300R3]]: `std::execution`
+* [[P2300R4]]: `std::execution`
 
 The following papers were reviewed at Library Evolution 2022-01 supertelecon:
 
@@ -716,7 +716,7 @@ Library Evolution advanced 64 papers to Library for C++23 since 2020-04-06:
 * [[P2404R2]]: Move-Only Types For `equality_comparable_with`, `totally_ordered_with`, And `three_way_comparable_with`
 * [[P2502R1]]: `std::generator`
 * [[P0009R14]]: `mdspan`
-* [[P2093R11]]: Formatted Output
+* [[P2093R13]]: Formatted Output
 * [[P1467R7]]: Extended Floating-Point Types
 * [[P2278R2]]: `cbegin` Should Always Return A Constant Iterator
 * [[P2408R4]]: Ranges Iterators As Inputs To Non-Ranges Algorithms
