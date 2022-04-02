@@ -141,9 +141,9 @@ More details on how we use telecons can be found in [[P2145R1]].
 <td>3
 <td>3
 <tr>
-<th># of (Super)Telecons Days
-<td>3
-<td>3
+<th># of (Super)Telecon Days
+<td>6
+<td>6
 <tr>
 <th># of Papers Reviewed On (Super)Telecons
 <td>36
