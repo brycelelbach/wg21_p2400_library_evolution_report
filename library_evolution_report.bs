@@ -418,9 +418,9 @@ That discussion reached a few key conclusions [[P2453R0]]:
 * There is consensus in Library Evolution that Senders and Receivers model is
     a good basis for most asynchronous use cases, including networking,
     parallelism, and heterogeneous computing.
-* There is consensus in Library Evolution that the Networking TS model is
-    a not a suitable basis for most asynchronous use cases, including
-    networking, parallelism, and heterogeneous computing.
+* Most in Library Evolution feel that the Networking TS model is not a suitable
+    basis for most asynchronous use cases, including parallelism
+    and heterogeneous computing.
 * Library Evolution does not want to stop working on the Networking TS.
 * Library Evolution would like networking in the Standard Library to be based
     on Senders and Receivers.
