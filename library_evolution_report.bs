@@ -556,7 +556,7 @@ The following proposals were advanced to Library Working Group for the
 * [[P0493R3]]: Atomic Maximum/Minimum
 * [[P2396R0]]: Concurrency TS v2 Fixes
 
-## Papers Reviewed From 2021-09-28 To 2021-01-25 ## {#papers-reviewed}
+## Papers Reviewed ## {#papers-reviewed}
 
 The following papers were evaluated in the 2021-10 Library Evolution polling
   period (see [[P2453R0]] for details):
