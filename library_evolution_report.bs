@@ -526,7 +526,8 @@ We completed our review of [[P1885R8]] Naming Text Encodings To Demystify Them,
   which is a part of the roadmap laid our in [[P1238R0]] Unicode Direction, and
   sent it to Library Working Group for C++23 via electronic poll.
 We also advanced [[P2460R0]] Relax Requirements On `wchar_t` To Match Existing
-  Practices to Library Working Group for C++23 via electronic poll.
+  Practices to Library Working Group for C++23 via electronic poll, although
+  it still needs to be reviewed and approved by Language Evolution.
 
 ### Linear Algebra and `mdspan` ### {#linear-algebra-and-mdspan}
 
