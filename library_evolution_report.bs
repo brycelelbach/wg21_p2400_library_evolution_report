@@ -197,7 +197,7 @@ Mailing list reviews are critical to our operations, as they allow us to increas
   our paper-processing bandwidth without increasing the frequency or duration
   of telecons.
 Additionally, certain classes of papers tend to be particularly well suited for
-  mailing list reviews, such as new proposals which tend need feedback, not
+  mailing list reviews, such as new proposals which tend to need feedback, not
   decision making.
 
 We conduct 2 to 3 mailing list reviews concurrently, and each review lasts for
