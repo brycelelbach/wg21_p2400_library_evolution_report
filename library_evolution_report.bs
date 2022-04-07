@@ -359,6 +359,7 @@ Library Evolution is organized by a team, not a single individual:
 * Nevin Liber, Incubator Vice Chair
 * Corentin Jabot, Mailing List Review Manager
 * Inbal Levi, Mailing List Review Manager and Algorithms Task Force Chair
+* Gašper Ažman, Coroutines Library Task Force Chair
 
 Leadership by a group instead of a team has a number of benefits:
 
