@@ -746,7 +746,7 @@ Library Evolution advanced 64 papers to Library for C++23 since 2020-04-06:
 * [[P2291R2]]: Add Constexpr Modifiers To Functions `to_chars` And `from_chars` For Integral Types In `<charconv>` Header
 * [[P2372R1]]: Fixing Locale Handling In Chrono Formatters
 * [[P1206R6]]: `ranges::to`
-* [[P0533R8]]: `constexpr` For `<cmath>` And `<cstdlib>`
+* [[P0533R9]]: `constexpr` For `<cmath>` And `<cstdlib>`
 * [[P2273R2]]: Making unique_ptr constexpr
 * [[P0323R10]]: `expected`
 * [[P2325R2]]: Views Should Not Be Required To Be Default Constructible
